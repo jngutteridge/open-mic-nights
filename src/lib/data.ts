@@ -1,14 +1,37 @@
+export interface Occurrence {
+  day: string;
+  week: string;
+}
 
-export const openMicData = {
+export interface Event {
+  hosts?: string[];
+  host?: string;
+  location: string;
+  occurrence?: Occurrence;
+  occurrences?: Occurrence[];
+}
+
+export interface Host {
+  name: string;
+  slug: string;
+}
+
+export interface Location {
+  name: string;
+  slug: string;
+  address: string;
+}
+
+export const openMicData: { events: Event[], hosts: Host[], locations: Location[] } = {
   events: [
     {
       hosts: ['fran', 'lucy'],
       location: 'clarence',
       occurrence:
-        {
-          day: 'wednesday',
-          week: 'first'
-        },
+      {
+        day: 'wednesday',
+        week: 'first'
+      },
     },
     {
       host: 'humble-he',
@@ -62,7 +85,7 @@ export const openMicData = {
     {
       slug: 'babelas',
       name: 'Babelas Continental Bar',
-      address: '77 Queens Rd, Clarendon Park, Leicester LE2 1TT',      
+      address: '77 Queens Rd, Clarendon Park, Leicester LE2 1TT',
     },
     {
       slug: 'clarence',
