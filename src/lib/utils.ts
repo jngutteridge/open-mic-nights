@@ -3,14 +3,7 @@ import type { Event } from "$lib/data";
 
 
 function getWeekDayOfTheMonth(date: Date) {
-  const monthStart = new Date(date);
-  const day = monthStart.getDay();
-  monthStart.setDate(0);
-  while (day !== monthStart.getDay()) {
-    monthStart.setDate(monthStart.getDate() + 1);
-  }
-  const offset = (monthStart.getDay() + 1) % 7 - 1;
-  return Math.ceil((date.getDate() + offset) / 7) - 1;
+  return Math.ceil((date.getDate()) / 7) - 1;
 }
 
 function uppercaseFirstLetter(string: string) {
