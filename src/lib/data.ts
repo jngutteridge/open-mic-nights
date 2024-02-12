@@ -85,7 +85,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     },
     {
       slug: 'lucy',
-      name: 'Lucy Bembridge',
+      name: 'Lucy Bremridge',
       links: [
         {
           icon: 'facebook',
