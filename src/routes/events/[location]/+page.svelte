@@ -5,18 +5,25 @@
   $: slug = data.slug;
   $: hosts = data.hosts;
   $: events = data.events;
+  $: address = data.address;
+  $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([name, address].join(' '));
 </script>
 <div class="m-4 p-4 rounded-xl bg-slate-800">
   <div class="flex gap-4">
     <div class="grow text-pretty">
-      <h1 class="text-2xl">{ name } open mic</h1>
+      <h1 class="text-2xl font-semibold">{ name } open mic</h1>
       <h2>Hosted by
-        {#each hosts as { name, slug }, index}
-         {#if index > 0 }<span class="mx-1">and</span>{/if}
-          <a class="underline" href={`/hosts/${slug}`}>{name}</a>
-        {/each}
+      {#each hosts as { name, slug }, index}
+        {#if index > 0 }<span class="mx-1">and</span>{/if}
+        <a class="underline" href={`/hosts/${slug}`}>{name}</a>
+      {/each}
       </h2>
-      <h2 class="my-4">Upcoming events</h2>
+      <strong class="block font-semibold mt-4">{ name }</strong>
+      <span>{ address }</span>
+      <div class="block">
+        <a class="underline" href={ mapsLink } target="_blank">View on Google Maps</a>
+      </div>
+      <h2 class="my-4 font-semibold">Upcoming events</h2>
       <ul class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-stretch gap-4">
       {#each events as event}
         <li class="rounded-md bg-amber-700 text-white py-2 px-4 font-semibold text-center overflow-ellipsis whitespace-nowrap">{ event }</li>
