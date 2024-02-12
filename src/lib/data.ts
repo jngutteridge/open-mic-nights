@@ -7,6 +7,7 @@ export interface Event {
   hosts?: string[];
   host?: string;
   location: string;
+  time: string;
   occurrence?: Occurrence;
   occurrences?: Occurrence[];
 }
@@ -14,6 +15,12 @@ export interface Event {
 export interface Host {
   name: string;
   slug: string;
+  links?: Link[];
+}
+
+export interface Link {
+  icon: string;
+  href: string;
 }
 
 export interface Location {
@@ -27,6 +34,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       hosts: ['fran', 'lucy'],
       location: 'clarence',
+      time: '7.30pm',
       occurrence:
       {
         day: 'wednesday',
@@ -36,6 +44,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       host: 'humble-he',
       location: 'babelas',
+      time: '7.30pm',
       occurrences: [
         {
           day: 'wednesday',
@@ -50,6 +59,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       host: 'fran',
       location: 'white-bear',
+      time: '7.30pm',
       occurrences: [
         {
           day: 'monday',
@@ -66,14 +76,36 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       slug: 'humble-he',
       name: 'Humble He',
+      links: [
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/humblehe/',
+        },
+      ],
     },
     {
       slug: 'lucy',
       name: 'Lucy Bembridge',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/LucyBremridgeMusic',
+        },
+      ],
     },
     {
       slug: 'fran',
       name: 'Francesca Hatton-Murden',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/profile.php?id=61556521434582',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/francescahattonmurdenmusic/',
+        }
+      ],
     },
   ],
   locations: [

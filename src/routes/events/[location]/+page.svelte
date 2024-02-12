@@ -7,6 +7,7 @@
   $: events = data.events;
   $: address = data.address;
   $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([name, address].join(' '));
+  $: start = data.start;
 </script>
 <div class="m-4 p-4 rounded-xl bg-slate-800">
   <div class="flex gap-4">
@@ -23,6 +24,7 @@
       <div class="block">
         <a class="underline" href={ mapsLink } target="_blank">View on Google Maps</a>
       </div>
+      <p class="mt-4">Start time { start }</p>
       <h2 class="my-4 font-semibold">Upcoming events</h2>
       <ul class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-stretch gap-4">
       {#each events as event}
@@ -33,3 +35,6 @@
     <img class="w-[30vw] md:w-[40vw] object-cover object-top" src={`/${slug}.jpg`} alt="" />
   </div>
 </div>
+<svelte:head>
+  <title>{ name } Leicester open mic hosted by { hosts.map(host => host.name).join(' and ') }</title>
+</svelte:head>

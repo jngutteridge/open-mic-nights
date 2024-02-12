@@ -17,7 +17,7 @@ export function getEventsView() {
     const item = {
       title: openMicData.locations.find(location => location.slug === event.location)?.name ?? '',
       hosts: (event?.hosts ?? [event.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)?.name).join(' and '),
-      when: uppercaseFirstLetter((event?.occurrences ?? [event?.occurrence] ?? []).map(occurrence => `the ${occurrence?.week} ${uppercaseFirstLetter(occurrence?.day ?? '')}`).join(' and ')),
+      when: uppercaseFirstLetter((event?.occurrences ?? [event?.occurrence] ?? []).map(occurrence => `the ${occurrence?.week} ${uppercaseFirstLetter(occurrence?.day ?? '')}`).join(' and ')) + ' of the month',
       slug: event.location,
     };
     eventsView.push(item);

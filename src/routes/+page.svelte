@@ -5,7 +5,7 @@
   const occurrencesView = getOccurrencesView();
 </script>
 <div class="px-4">
-  <h1 class="font-bold mt-8">Upcoming events</h1>
+  <h1 class="font-semibold mt-8">Upcoming events</h1>
 </div>
 <ul class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-4">
 {#each occurrencesView as {title, hosts, date, slug}}
@@ -21,7 +21,7 @@
 {/each}
 </ul>
 <div class="px-4">
-  <h1 class="font-bold mt-8">Featured open mics</h1>
+  <h1 class="font-semibold mt-8">Featured open mics</h1>
 </div>
 <ul class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-4">
 {#each eventsView as {title, hosts, when, slug}}
@@ -36,3 +36,6 @@
   </li>
 {/each}
 </ul>
+<svelte:head>
+  <title>Leicester Open Mic Nights</title>
+</svelte:head>

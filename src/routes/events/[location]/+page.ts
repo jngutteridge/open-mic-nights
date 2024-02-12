@@ -26,5 +26,6 @@ export function load({ params: { location } }) {
     slug: locationData.slug,
     hosts,
     events,
+    start: event.time,
   };
 }
