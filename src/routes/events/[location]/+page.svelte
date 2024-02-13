@@ -32,7 +32,7 @@
       {/each}
       </ul>
     </div>
-    <img class="w-[30vw] md:w-[40vw] object-cover object-top" src={`/${slug}.jpg`} alt="" />
+    <img class="w-[30vw] md:w-[40vw] object-cover object-top max-h-96 md:max-h-full max-w-md" src={`/${slug}.jpg`} alt="" />
   </div>
 </div>
 <svelte:head>
