@@ -17,9 +17,17 @@
       </ul>
       <h2 class="mt-4 text-lg font-semibold">Events</h2>
       <ul>
-      {#each events as event}
-        <li><a class="underline" href={`/events/${event.slug}`}>{ event.name }</a></li>
+      <ul class="gap-4">
+      {#each events as {name, when, slug}}
+        <li>
+          <div class="my-4 text-pretty">
+            <h2 class="font-bold">{ name } open mic</h2>
+            <span class="text-amber-400 block">{ when }</span>
+          </div>
+          <a href={`/events/${slug}`} class="absolute inset-0"><span class="hidden">More information</span></a>
+        </li>
       {/each}
+      </ul>
       </ul>
     </div>
     <img class="w-[40vw] max-w-sm object-cover object-top" src={`/${slug}.jpg`} alt="" />
