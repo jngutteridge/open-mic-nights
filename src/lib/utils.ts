@@ -1,17 +1,9 @@
 import { openMicData } from "$lib/data";
-import type { Event, Occurrence } from "$lib/data";
+import type { Event } from "$lib/data";
 
 
 function getWeekDayOfTheMonth(date: Date) {
   return Math.ceil((date.getDate()) / 7) - 1;
-}
-
-function uppercaseFirstLetter(string: string) {
-  return string[0].toLocaleUpperCase() + string.slice(1);
-}
-
-export function humaniseOccurrences(occurrences: Occurrence[]) {
-  return uppercaseFirstLetter(occurrences.map(occurrence => `${occurrence?.week !== 'every' ? 'the ' : ''}${occurrence?.week} ${uppercaseFirstLetter(occurrence?.day ?? '')}`).join(' and ')) + `${occurrences[0]?.week !== 'every' ? ' of the month' : ''} `;
 }
 
 export function getEventsView() {
@@ -21,7 +13,7 @@ export function getEventsView() {
     const item = {
       title: openMicData.locations.find(location => location.slug === event.location)?.name ?? '',
       hosts: (event?.hosts ?? [event.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)?.name).join(' and '),
-      when: humaniseOccurrences((event?.occurrences ?? [event?.occurrence] ?? []) as Occurrence[]),
+      when: event.when,
       slug: event.location,
     };
     eventsView.push(item);

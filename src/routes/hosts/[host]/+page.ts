@@ -1,5 +1,4 @@
-import { openMicData, type Link, type Occurrence } from '$lib/data';
-import { humaniseOccurrences } from '$lib/utils.js';
+import { openMicData, type Link } from '$lib/data';
 import { error } from '@sveltejs/kit';
 
 export function load({ params: { host } }) {
@@ -11,7 +10,7 @@ export function load({ params: { host } }) {
 
   const events = openMicData.events.filter(event => (event?.hosts ?? [event.host]).includes(host)).map(event => {
     const location = openMicData.locations.find(location => location.slug === event.location);
-    return { slug: event.location, name: location?.name, when: humaniseOccurrences((event?.occurrences ?? [event?.occurrence] ?? []) as Occurrence[]) }
+    return { slug: event.location, name: location?.name, when: event.when }
   }) as { name: string; slug: string; when: string; }[];
 
   return { name: hostData.name, slug: hostData.slug, events, links: hostData.links as Link[] };

@@ -8,6 +8,7 @@ export interface Event {
   host?: string;
   location: string;
   time: string;
+  when: string;
   occurrence?: Occurrence;
   occurrences?: Occurrence[];
 }
@@ -35,6 +36,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       hosts: ['fran', 'lucy'],
       location: 'clarence',
       time: '7.30pm',
+      when: 'The first Wednesday of the month',
       occurrence:
       {
         day: 'wednesday',
@@ -45,6 +47,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       host: 'humble-he',
       location: 'babelas',
       time: '7.30pm',
+      when: 'The first and third Wednesday of the month',
       occurrences: [
         {
           day: 'wednesday',
@@ -60,6 +63,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       host: 'fran',
       location: 'white-bear',
       time: '7.30pm',
+      when: 'The second and fourth Monday of the month',
       occurrences: [
         {
           day: 'monday',
@@ -75,6 +79,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       host: 'baker-and-crane',
       location: 'royal-oak',
       time: '7pm',
+      when: 'The third Thursday of the month',
       occurrence: {
         day: 'thursday',
         week: 'third',
@@ -84,6 +89,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       host: 'liam-and-sean',
       location: 'railway',
       time: '5pm',
+      when: 'The last Sunday of the month',
       occurrence: {
         day: 'sunday',
         week: 'last',
@@ -93,6 +99,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       host: 'fran',
       location: 'volpo',
       time: '7.30pm',
+      when: 'The last Wednesday of the month',
       occurrence: {
         day: 'wednesday',
         week: 'last',
@@ -101,6 +108,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       host: 'open-mike',
       location: 'soundhouse',
+      when: 'Every Tuesday',
       time: '7pm',
       occurrence: {
         day: 'tuesday',
