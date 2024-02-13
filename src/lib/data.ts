@@ -71,6 +71,15 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      host: 'baker-and-crane',
+      location: 'royal-oak',
+      time: '7pm',
+      occurrence: {
+        day: 'thursday',
+        week: 'third',
+      },
+    },
   ],
   hosts: [
     {
@@ -104,7 +113,17 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/francescahattonmurdenmusic/',
-        }
+        },
+      ],
+    },
+    {
+      slug: 'baker-and-crane',
+      name: 'Baker & Crane',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/BakerandCrane',
+        },
       ],
     },
   ],
@@ -123,6 +142,11 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       slug: 'clarence',
       name: 'The Clarence Cafe Bar',
       address: '5 Market Pl, Hinckley LE10 1NT',
+    },
+    {
+      slug: 'royal-oak',
+      name: 'Royal Oak',
+      address: '14 Cross Grn, Rothley, Leicester LE7 7PF',
     },
   ]
 };
