@@ -89,6 +89,15 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'last',
       },
     },
+    {
+      host: 'fran',
+      location: 'volpo',
+      time: '7.30pm',
+      occurrence: {
+        day: 'wednesday',
+        week: 'last',
+      },
+    },
   ],
   hosts: [
     {
@@ -171,6 +180,11 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       slug: 'railway',
       name: 'The Railway',
       address: '128 Station Rd, Countesthorpe, Leicester LE8 5TD',
+    },
+    {
+      slug: 'volpo',
+      name: 'Volpo Lounge',
+      address: 'Fosse Park S, West, Leicester LE19 1HX',
     },
   ]
 };
