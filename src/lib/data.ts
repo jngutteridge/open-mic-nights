@@ -80,6 +80,15 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'third',
       },
     },
+    {
+      host: 'liam-and-sean',
+      location: 'railway',
+      time: '5pm',
+      occurrence: {
+        day: 'sunday',
+        week: 'last',
+      },
+    },
   ],
   hosts: [
     {
@@ -126,6 +135,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      slug: 'liam-and-sean',
+      name: 'Liam & Sean',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/liamandseanacousticduo/',
+        },
+      ],
+    },
   ],
   locations: [
     {
@@ -145,8 +164,13 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     },
     {
       slug: 'royal-oak',
-      name: 'Royal Oak',
+      name: 'The Royal Oak',
       address: '14 Cross Grn, Rothley, Leicester LE7 7PF',
+    },
+    {
+      slug: 'railway',
+      name: 'The Railway',
+      address: '128 Station Rd, Countesthorpe, Leicester LE8 5TD',
     },
   ]
 };
