@@ -17,13 +17,12 @@
       </ul>
       <h2 class="mt-4 text-lg font-semibold">Events</h2>
       <ul>
-      <ul class="gap-4">
+      <ul class="gap-4 mt-2">
       {#each events as {name, when, slug}}
         <li>
-          <div class="my-4 text-pretty">
-            <h2 class="font-bold">{ name } open mic</h2>
+          <div class="mb-4 text-pretty">
+            <h2 class="font-semibold"><a class="underline" href={`/events/${slug}`}>{ name } open mic</a></h2>
             <span class="text-amber-400 block">{ when }</span>
-            <a class="underline" href={`/events/${slug}`}>More information</a>
           </div>
         </li>
       {/each}

@@ -21,9 +21,8 @@
       {/each}
       </h2>
       <strong class="block font-semibold mt-4">{ name }</strong>
-      <span>{ address }</span>
       <div class="block">
-        <a class="underline" href={ mapsLink } target="_blank">View on Google Maps</a>
+        <a class="underline" href={ mapsLink } target="_blank">{ address }</a>
       </div>
       <p class="mt-4">{ when }</p>
       <p>Start time { start }</p>
