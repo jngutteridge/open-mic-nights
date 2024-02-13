@@ -1,13 +1,16 @@
 <script lang="ts">
   import { getEventsView, getOccurrencesView } from "$lib/utils";
 
+  setTimeout(() => live = true, 0);
+
+  $: live = false;
   const eventsView = getEventsView();
   const occurrencesView = getOccurrencesView();
 </script>
 <div class="px-4">
   <h1 class="font-semibold mt-8">Upcoming events</h1>
 </div>
-<ul class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-4">
+<ul class="md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-4 animate-pull grid" class:opacity-0={!live}>
 {#each occurrencesView as {title, hosts, date, slug}}
   <li class="relative h-40 overflow-hidden rounded-xl grid grid-cols-3 bg-slate-800 hover:outline">
     <div class="p-4 grow col-span-2 text-pretty">
