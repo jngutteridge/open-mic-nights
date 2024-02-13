@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
-import { openMicData } from '$lib/data';
-import { getOccurrencesView } from '$lib/utils';
+import { openMicData, type Occurrence } from '$lib/data';
+import { getOccurrencesView, humaniseOccurrences } from '$lib/utils';
 
 export function load({ params: { location } }) {
 
@@ -20,6 +20,8 @@ export function load({ params: { location } }) {
 
   const events = getOccurrencesView(openMicData.events.find(event => event.location === location)).map(occurrence => occurrence.date);
 
+  const when = humaniseOccurrences((event?.occurrences ?? [event?.occurrence] ?? []) as Occurrence[]);
+
   return {
     name: locationData.name,
     address: locationData.address,
@@ -27,5 +29,6 @@ export function load({ params: { location } }) {
     hosts,
     events,
     start: event.time,
+    when,
   };
 }

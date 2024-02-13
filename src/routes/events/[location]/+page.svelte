@@ -8,6 +8,7 @@
   $: address = data.address;
   $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([name, address].join(' '));
   $: start = data.start;
+  $: when = data.when;
 </script>
 <div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-xl">
   <div class="flex">
@@ -24,7 +25,8 @@
       <div class="block">
         <a class="underline" href={ mapsLink } target="_blank">View on Google Maps</a>
       </div>
-      <p class="mt-4">Start time { start }</p>
+      <p class="mt-4">{ when }</p>
+      <p>Start time { start }</p>
       <h2 class="my-4 font-semibold">Upcoming events</h2>
       <ul class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-stretch gap-4">
       {#each events as event}
