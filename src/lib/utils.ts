@@ -11,7 +11,7 @@ function uppercaseFirstLetter(string: string) {
 }
 
 export function humaniseOccurrences(occurrences: Occurrence[]) {
-  return uppercaseFirstLetter(occurrences.map(occurrence => `${occurrence?.week !== 'every' ? 'the ' : ''}${occurrence?.week} ${uppercaseFirstLetter(occurrence?.day ?? '')}`).join(' and ')) + ' of the month';
+  return uppercaseFirstLetter(occurrences.map(occurrence => `${occurrence?.week !== 'every' ? 'the ' : ''}${occurrence?.week} ${uppercaseFirstLetter(occurrence?.day ?? '')}`).join(' and ')) + `${occurrences[0]?.week !== 'every' ? ' of the month' : ''} `;
 }
 
 export function getEventsView() {
