@@ -23,8 +23,8 @@
           <div class="my-4 text-pretty">
             <h2 class="font-bold">{ name } open mic</h2>
             <span class="text-amber-400 block">{ when }</span>
+            <a class="underline" href={`/events/${slug}`}>More information</a>
           </div>
-          <a href={`/events/${slug}`} class="absolute inset-0"><span class="hidden">More information</span></a>
         </li>
       {/each}
       </ul>
