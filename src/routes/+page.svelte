@@ -20,5 +20,5 @@
 {/each}
 </ul>
 <svelte:head>
-  <title>Leicester Open Mic Nights</title>
+  <title>Leicester Open Mics</title>
 </svelte:head>
