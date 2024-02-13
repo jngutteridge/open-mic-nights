@@ -17,7 +17,7 @@ export function getEventsView() {
     const item = {
       title: openMicData.locations.find(location => location.slug === event.location)?.name ?? '',
       hosts: (event?.hosts ?? [event.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)?.name).join(' and '),
-      when: uppercaseFirstLetter((event?.occurrences ?? [event?.occurrence] ?? []).map(occurrence => `the ${occurrence?.week} ${uppercaseFirstLetter(occurrence?.day ?? '')}`).join(' and ')) + ' of the month',
+      when: uppercaseFirstLetter((event?.occurrences ?? [event?.occurrence] ?? []).map(occurrence => `${occurrence?.week !== 'every' ? 'the ' : ''}${occurrence?.week} ${uppercaseFirstLetter(occurrence?.day ?? '')}`).join(' and ')) + ' of the month',
       slug: event.location,
     };
     eventsView.push(item);
@@ -45,7 +45,7 @@ export function getOccurrencesView(eventInput: Event | null = null) {
 
     for (const event of events) {
       for (const occurrence of (event?.occurrences ?? [event?.occurrence] ?? [])) {
-        if (currentWeekDay === occurrence?.day && (currentWeek === occurrence.week || occurrence.week === 'last' && last)) {
+        if (currentWeekDay === occurrence?.day && (currentWeek === occurrence.week || occurrence.week === 'last' && last) || currentWeekDay === occurrence?.day && occurrence?.week === 'every') {
           occurrencesView.push({
             title: openMicData.locations.find(location => location.slug === event?.location)?.name ?? '',
             hosts: (event?.hosts ?? [event?.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)?.name).join(' and '),

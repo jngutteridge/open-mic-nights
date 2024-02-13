@@ -98,6 +98,15 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'last',
       },
     },
+    {
+      host: 'open-mike',
+      location: 'soundhouse',
+      time: '7pm',
+      occurrence: {
+        day: 'tuesday',
+        week: 'every',
+      }
+    },
   ],
   hosts: [
     {
@@ -154,6 +163,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      slug: 'open-mike',
+      name: 'Mike Howard-Ahern',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/profile.php?id=100063776326890',
+        },
+      ],
+    },
   ],
   locations: [
     {
@@ -185,6 +204,11 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       slug: 'volpo',
       name: 'Volpo Lounge',
       address: 'Fosse Park S, West, Leicester LE19 1HX',
+    },
+    {
+      slug: 'soundhouse',
+      name: 'SoundHouse',
+      address: '28 Southampton St, Leicester LE1 1SJ',
     },
   ]
 };
