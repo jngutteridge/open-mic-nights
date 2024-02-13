@@ -12,7 +12,7 @@
       <h1 class="text-2xl text-balance">{ name }</h1>
       <ul class="flex gap-4 mt-4">
       {#each links as link}
-        <li><a class="underline" href={link.href}><img class="bg-slate-50" src={`/${link.icon}.svg`} alt="" /></a></li>
+        <li><a class="underline" target="_blank" href={link.href}><img class="bg-slate-50" src={`/${link.icon}.svg`} alt="" /></a></li>
       {/each}
       </ul>
       <h2 class="mt-4 text-lg font-semibold">Events</h2>
