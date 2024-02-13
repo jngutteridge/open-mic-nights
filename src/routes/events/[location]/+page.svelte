@@ -9,9 +9,9 @@
   $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([name, address].join(' '));
   $: start = data.start;
 </script>
-<div class="m-4 p-4 rounded-xl bg-slate-800">
-  <div class="flex gap-4">
-    <div class="grow text-pretty">
+<div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden">
+  <div class="flex">
+    <div class="p-4 grow text-pretty">
       <h1 class="text-2xl font-semibold">{ name } open mic</h1>
       <h2>Hosted by
       {#each hosts as { name, slug }, index}

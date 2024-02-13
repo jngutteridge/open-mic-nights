@@ -6,9 +6,9 @@
   $: events = data.events;
   $: links = data.links;
 </script>
-<div class="m-4 p-4 rounded-xl bg-slate-800">
-  <div class="flex gap-4">
-    <div class="grow">
+<div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-md">
+  <div class="flex">
+    <div class="p-4 grow">
       <h1 class="text-2xl text-balance">{ name }</h1>
       <ul class="flex gap-4 mt-4">
       {#each links as link}
@@ -22,7 +22,7 @@
       {/each}
       </ul>
     </div>
-    <img class="w-[30vw] md:w-[40vw] object-cover object-top" src={`/${slug}.jpg`} alt="" />
+    <img class="w-[40vw] max-w-sm object-cover object-top" src={`/${slug}.jpg`} alt="" />
   </div>
 </div>
 <svelte:head>
