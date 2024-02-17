@@ -10,6 +10,7 @@
   $: start = data.start;
   $: when = data.when;
   $: where = data.where;
+  $: links = data.links;
 </script>
 <div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-xl">
   <div class="flex">
@@ -27,6 +28,11 @@
       </div>
       <p class="mt-4">{ when }</p>
       <p>Start time { start }</p>
+      <ul class="gap-4 mt-4">
+      {#each links as link}
+        <li><a class="underline" target="_blank" href={link.href}><img class="bg-slate-50" src={`/${link.icon}.svg`} alt="" /></a></li>
+      {/each}
+      </ul>
       <h2 class="my-4 font-semibold">Upcoming events</h2>
       <ul class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-stretch gap-4">
       {#each events as event}

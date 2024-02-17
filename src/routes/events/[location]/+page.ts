@@ -29,5 +29,6 @@ export function load({ params: { location } }) {
     start: event.time,
     when: event.when,
     where: locationData.location,
+    links: event?.links ?? [],
   };
 }

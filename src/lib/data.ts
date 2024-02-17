@@ -11,6 +11,7 @@ export interface Event {
   when: string;
   occurrence?: Occurrence;
   occurrences?: Occurrence[];
+  links?: Link[];
 }
 
 export interface Host {
@@ -95,6 +96,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'sunday',
         week: 'last',
       },
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/groups/889249722600945',
+        },
+      ],
     },
     {
       host: 'fran',
@@ -114,7 +121,13 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       occurrence: {
         day: 'tuesday',
         week: 'every',
-      }
+      },
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/groups/845464738850535',
+        },
+      ],
     },
   ],
   hosts: [

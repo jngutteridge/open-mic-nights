@@ -16,7 +16,6 @@
       {/each}
       </ul>
       <h2 class="mt-4 text-lg font-semibold">Events</h2>
-      <ul>
       <ul class="gap-4 mt-2">
       {#each events as {name, when, slug}}
         <li>
@@ -26,7 +25,6 @@
           </div>
         </li>
       {/each}
-      </ul>
       </ul>
     </div>
     <img class="w-[40vw] max-w-sm object-cover object-top" src={`/${slug}.jpg`} alt="" />
