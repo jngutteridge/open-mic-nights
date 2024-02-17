@@ -16,7 +16,7 @@ export function load({ params: { location } }) {
     throw error(404);
   }
 
-  const hosts = (event?.hosts ?? [event.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)) as { name: string, slug: string }[];
+  const hosts = openMicData.hosts.filter(host => (event?.hosts ?? [event.host]).includes(host.slug));
 
   const events = getOccurrencesView(openMicData.events.find(event => event.location === location)).map(occurrence => occurrence.date);
 

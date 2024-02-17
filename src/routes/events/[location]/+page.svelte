@@ -43,6 +43,23 @@
     <img class="w-[30vw] md:w-[40vw] object-cover object-top max-h-96 md:max-h-full max-w-md" src={`/${slug}.jpg`} alt="" />
   </div>
 </div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:p-4 pb-4 pt-0 md:pt-0 max-w-screen-xl">
+  {#each hosts as host }
+  <div class="md:rounded-xl bg-slate-800 overflow-hidden">
+    <div class="flex">
+      <div class="p-4 grow">
+        <h1 class="text-xl text-balance"><a class="underline" href={`/hosts/${host.slug}`}>{ host.name }</a></h1>
+        <ul class="flex gap-4 mt-4">
+        {#each host.links ?? [] as link}
+          <li><a class="underline" target="_blank" href={link.href}><img class="bg-slate-50" src={`/${link.icon}.svg`} alt="" /></a></li>
+        {/each}
+        </ul>
+      </div>
+      <img class="max-w-32 object-cover object-top" src={`/${host.slug}.jpg`} alt="" />
+    </div>
+  </div>
+  {/each}
+</div>
 <svelte:head>
   <title>{ name } Leicester open mic hosted by { hosts.map(host => host.name).join(' and ') }</title>
 </svelte:head>
