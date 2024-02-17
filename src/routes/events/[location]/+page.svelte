@@ -9,11 +9,12 @@
   $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([name, address].join(' '));
   $: start = data.start;
   $: when = data.when;
+  $: where = data.where;
 </script>
 <div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-xl">
   <div class="flex">
     <div class="p-4 grow text-pretty">
-      <h1 class="text-2xl font-semibold">{ name } open mic</h1>
+      <h1 class="text-2xl font-semibold">{ name } { where } open mic</h1>
       <h2>Hosted by
       {#each hosts as { name, slug }, index}
         {#if index > 0 }<span class="mx-1">and</span>{/if}

@@ -7,14 +7,16 @@ function getWeekDayOfTheMonth(date: Date) {
 }
 
 export function getEventsView() {
-  const eventsView: { title: string, hosts: string, when: string, slug: string }[] = [];
+  const eventsView: { title: string, hosts: string, when: string, slug: string, where: string; }[] = [];
 
   for (const event of openMicData.events) {
+    const location = openMicData.locations.find(location => location.slug === event.location);
     const item = {
-      title: openMicData.locations.find(location => location.slug === event.location)?.name ?? '',
+      title: location?.name ?? '',
       hosts: (event?.hosts ?? [event.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)?.name).join(' and '),
       when: event.when,
       slug: event.location,
+      where: location?.location ?? '',
     };
     eventsView.push(item);
   }
@@ -27,7 +29,7 @@ export function getOccurrencesView(eventInput: Event | null = null) {
   if (!eventInput) {
     events = openMicData.events;
   }
-  const occurrencesView: { title: string, hosts: string, date: string, slug: string }[] = [];
+  const occurrencesView: { title: string, hosts: string, date: string, slug: string; where: string; }[] = [];
   const now = new Date();
   const duration = 90;
   for (let currentDay = 0; currentDay < duration; currentDay += 1) {
@@ -42,11 +44,13 @@ export function getOccurrencesView(eventInput: Event | null = null) {
     for (const event of events) {
       for (const occurrence of (event?.occurrences ?? [event?.occurrence] ?? [])) {
         if (currentWeekDay === occurrence?.day && (currentWeek === occurrence.week || occurrence.week === 'last' && last) || currentWeekDay === occurrence?.day && occurrence?.week === 'every') {
+          const location = openMicData.locations.find(location => location.slug === event?.location);
           occurrencesView.push({
-            title: openMicData.locations.find(location => location.slug === event?.location)?.name ?? '',
+            title: location?.name ?? '',
             hosts: (event?.hosts ?? [event?.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)?.name).join(' and '),
             date: [['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'][currentDate.getDay()], currentDate.getDate(), ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][currentDate.getMonth()]].join(' '),
             slug: event?.location || '',
+            where: location?.location ?? '',
           })
         }
       }

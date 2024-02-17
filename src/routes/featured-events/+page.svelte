@@ -3,10 +3,10 @@
   const eventsView = getEventsView();
 </script>
 <ul class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-4 animate-pull">
-{#each eventsView as {title, hosts, when, slug}}
+{#each eventsView as {title, hosts, when, slug, where}}
   <li class="relative h-40 overflow-hidden rounded-xl grid grid-cols-3 bg-slate-800 hover:outline">
     <div class="p-4 grow col-span-2 text-pretty">
-      <h2 class="font-bold">{ title }</h2>
+      <h2 class="font-bold">{ title } { where }</h2>
       <span>With { hosts }</span>
       <span class="text-amber-400 block">{ when }</span>
     </div>

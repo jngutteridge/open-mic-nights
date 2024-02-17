@@ -7,11 +7,11 @@
   const occurrencesView = getOccurrencesView();
 </script>
 <ul class="md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-4 animate-pull grid" class:opacity-0={!live}>
-{#each occurrencesView as {title, hosts, date, slug}}
+{#each occurrencesView as {title, hosts, date, slug, where}}
   <li class="relative h-40 overflow-hidden rounded-xl grid grid-cols-3 bg-slate-800 hover:outline">
     <div class="p-4 grow col-span-2 text-pretty">
       <span class="text-amber-400">{ date }</span>
-      <h2 class="font-bold">{ title }</h2>
+      <h2 class="font-bold">{ title } { where }</h2>
       <span>With { hosts }</span>
     </div>
     <img class="w-40 min-w-full h-40 object-cover object-top" src={`/${slug}.jpg`} alt="" />

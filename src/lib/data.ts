@@ -28,6 +28,7 @@ export interface Location {
   name: string;
   slug: string;
   address: string;
+  location: string;
 }
 
 export const openMicData: { events: Event[], hosts: Host[], locations: Location[] } = {
@@ -187,36 +188,43 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       slug: 'white-bear',
       name: 'Steamin’ Billy White Bear',
       address: 'Coventry Rd, Hinckley LE10 0JT',
+      location: 'Hinckley',
     },
     {
       slug: 'babelas',
       name: 'Babelas Continental Bar',
       address: '77 Queens Rd, Clarendon Park, Leicester LE2 1TT',
+      location: 'Clarendon Park',
     },
     {
       slug: 'clarence',
       name: 'The Clarence Cafe Bar',
       address: '5 Market Pl, Hinckley LE10 1NT',
+      location: 'Hinckley',
     },
     {
       slug: 'royal-oak',
       name: 'The Royal Oak',
       address: '14 Cross Grn, Rothley, Leicester LE7 7PF',
+      location: 'Rothley',
     },
     {
       slug: 'railway',
       name: 'The Railway',
       address: '128 Station Rd, Countesthorpe, Leicester LE8 5TD',
+      location: 'Countesthorpe',
     },
     {
       slug: 'volpo',
       name: 'Volpo Lounge',
       address: 'Fosse Park S, West, Leicester LE19 1HX',
+      location: 'Fosse Park',
     },
     {
       slug: 'soundhouse',
       name: 'SoundHouse',
       address: '28 Southampton St, Leicester LE1 1SJ',
+      location: 'Leicester',
     },
   ]
 };

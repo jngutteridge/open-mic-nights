@@ -28,5 +28,6 @@ export function load({ params: { location } }) {
     events,
     start: event.time,
     when: event.when,
+    where: locationData.location,
   };
 }
