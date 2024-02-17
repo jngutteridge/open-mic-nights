@@ -160,6 +160,10 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
           icon: 'facebook',
           href: 'https://www.facebook.com/BakerandCrane',
         },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/baker.crane/',
+        },
       ],
     },
     {
