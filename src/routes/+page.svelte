@@ -1,7 +1,10 @@
 <script lang="ts">
   import { getOccurrencesView } from "$lib/utils";
+  import { onMount } from 'svelte';
 
-  setTimeout(() => live = true, 0);
+  onMount(() => {
+    setTimeout(() => live = true, 0);
+  });
 
   $: live = false;
   const occurrencesView = getOccurrencesView();
