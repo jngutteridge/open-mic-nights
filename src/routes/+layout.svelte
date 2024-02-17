@@ -14,10 +14,21 @@
 <slot />
 <footer class="p-4 pt-0">
   <nav class="flex flex-wrap gap-4">
-    <a class="font-semibold py-2 px-3 rounded-md bg-amber-800 hover:bg-amber-900" href="/install/">Install app</a>
+    <a class="font-semibold py-2 px-3 rounded-md bg-amber-800 hover:bg-amber-900 browser" href="/install/">Install app</a>
     <a class="inline-block font-semibold py-2 px-3 rounded-md bg-slate-800 hover:bg-slate-700" href="/feature/">Feature your open mic</a>
     <a class="inline-block font-semibold py-2 px-3 rounded-md bg-slate-800 hover:bg-slate-700" target="_blank"  href="mailto:jack@kingbrick.co.uk">Contact us</a>
     <a class="inline-block font-semibold py-2 px-3 rounded-md bg-slate-800 hover:bg-slate-700" href="/about/">About this app</a>
     <a class="inline-block font-semibold py-2 px-3 rounded-md bg-cyan-900 hover:bg-cyan-800" target="_blank" href="https://www.bespokemedia.net/">Powered by Bespoke Media</a>
   </nav>
 </footer>
+<style>
+  .browser {
+    display: none;
+  }
+
+  @media (display-mode: browser) {
+    .browser {
+      display: inline-block;
+    }
+  }
+</style>
