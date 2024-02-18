@@ -11,6 +11,7 @@ export interface Event {
   when: string;
   occurrence?: Occurrence;
   occurrences?: Occurrence[];
+  manualOccurrences?: string[]; // '2015-4-16'
   links?: Link[];
 }
 
@@ -91,11 +92,20 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       host: 'liam-and-sean',
       location: 'railway',
       time: '5pm',
-      when: 'The last Sunday of the month',
-      occurrence: {
-        day: 'sunday',
-        week: 'last',
-      },
+      when: 'Usually the last or penultimate Sunday of the month',
+      manualOccurrences: [
+        '2024-2-25',
+        '2024-3-24',
+        '2024-4-21',
+        '2024-5-19',
+        '2024-6-23',
+        '2024-7-7',
+        '2024-8-18',
+        '2024-9-29',
+        '2024-10-27',
+        '2024-11-24',
+        '2024-12-22',
+      ],
       links: [
         {
           icon: 'facebook',

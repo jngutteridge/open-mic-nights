@@ -1,5 +1,5 @@
 import { openMicData } from "$lib/data";
-import type { Event } from "$lib/data";
+import type { Location, Event } from "$lib/data";
 
 
 function getWeekDayOfTheMonth(date: Date) {
@@ -24,6 +24,21 @@ export function getEventsView() {
   return eventsView;
 }
 
+function sameDate(manualOccurrence: string, currentDate: Date) {
+  const manualDate = new Date(manualOccurrence);
+  return manualDate.getDate() === currentDate.getDate() && manualDate.getMonth() === currentDate.getMonth() && manualDate.getFullYear() === currentDate.getFullYear();
+}
+
+function getOccurrencesViewItem(location: Location, event: Event, currentDate: Date) {
+  return {
+    title: location?.name ?? '',
+    hosts: (event?.hosts ?? [event?.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)?.name).join(' and '),
+    date: [['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'][currentDate.getDay()], currentDate.getDate(), ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][currentDate.getMonth()]].join(' '),
+    slug: event?.location || '',
+    where: location?.location ?? '',
+  };
+}
+
 export function getOccurrencesView(eventInput: Event | null = null) {
   let events = [eventInput];
   if (!eventInput) {
@@ -42,16 +57,19 @@ export function getOccurrencesView(eventInput: Event | null = null) {
     }
 
     for (const event of events) {
+      const location = openMicData.locations.find(location => location.slug === event?.location);
       for (const occurrence of (event?.occurrences ?? [event?.occurrence] ?? [])) {
         if (currentWeekDay === occurrence?.day && (currentWeek === occurrence.week || occurrence.week === 'last' && last) || currentWeekDay === occurrence?.day && occurrence?.week === 'every') {
-          const location = openMicData.locations.find(location => location.slug === event?.location);
-          occurrencesView.push({
-            title: location?.name ?? '',
-            hosts: (event?.hosts ?? [event?.host]).map(hostSlug => openMicData.hosts.find(host => host.slug === hostSlug)?.name).join(' and '),
-            date: [['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'][currentDate.getDay()], currentDate.getDate(), ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][currentDate.getMonth()]].join(' '),
-            slug: event?.location || '',
-            where: location?.location ?? '',
-          })
+          if (location && event) {
+            occurrencesView.push(getOccurrencesViewItem(location, event, currentDate));
+          }
+        }
+      }
+      for (const manualOccurrence of event?.manualOccurrences ?? []) {
+        if (sameDate(manualOccurrence, currentDate)) {
+          if (location && event) {
+            occurrencesView.push(getOccurrencesViewItem(location, event, currentDate));
+          }
         }
       }
     }
