@@ -15,3 +15,6 @@
   </li>
 {/each}
 </ul>
+<svelte:head>
+  <title>Open Mics in Leicestershire</title>
+</svelte:head>
