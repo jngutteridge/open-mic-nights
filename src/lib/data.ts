@@ -63,22 +63,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      host: 'fran',
-      location: 'white-bear',
-      time: '7.30pm',
-      when: 'The second and fourth Monday of the month',
-      occurrences: [
-        {
-          day: 'monday',
-          week: 'second',
-        },
-        {
-          day: 'monday',
-          week: 'fourth',
-        },
-      ],
-    },
-    {
       host: 'baker-and-crane',
       location: 'royal-oak',
       time: '7pm',
@@ -211,12 +195,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     },
   ],
   locations: [
-    {
-      slug: 'white-bear',
-      name: 'Steamin’ Billy White Bear',
-      address: 'Coventry Rd, Hinckley LE10 0JT',
-      location: 'Hinckley',
-    },
     {
       slug: 'babelas',
       name: 'Babelas Continental Bar',
