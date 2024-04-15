@@ -153,6 +153,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'third',
       },
     },
+    {
+      host: 'fran',
+      location: 'bull-broughton',
+      when: 'The second Monday of the month',
+      time: '7.30pm',
+      occurrence: {
+        day: 'monday',
+        week: 'second',
+      },
+    },
   ],
   hosts: [
     {
@@ -278,6 +288,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Tarro Lounge',
       address: 'The Crescent, Hinckley LE10 0QQ',
       location: 'Hinckley',
+    },
+    {
+      slug: 'bull-broughton',
+      name: 'The Bull',
+      address: '2 Main St, Broughton Astley, Leicester LE9 6RD',
+      location: 'Broughton Astley',
     },
   ]
 };
