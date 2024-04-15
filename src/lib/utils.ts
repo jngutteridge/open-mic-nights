@@ -59,7 +59,7 @@ export function getOccurrencesView(eventInput: Event | null = null) {
     for (const event of events) {
       const location = openMicData.locations.find(location => location.slug === event?.location);
       for (const occurrence of (event?.occurrences ?? [event?.occurrence] ?? [])) {
-        if (currentWeekDay === occurrence?.day && (currentWeek === occurrence.week || occurrence.week === 'last' && last) || currentWeekDay === occurrence?.day && occurrence?.week === 'every') {
+        if (currentWeekDay === occurrence?.day && (currentWeek === occurrence.week || occurrence.week === 'last' && last || occurrence.week === 'every')) {
           if (location && event) {
             occurrencesView.push(getOccurrencesViewItem(location, event, currentDate));
           }
