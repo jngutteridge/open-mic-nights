@@ -123,6 +123,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      hosts: ['fran', 'lucy'],
+      location: 'dixie-arms',
+      when: 'The first Thursday of the month',
+      time: '8pm',
+      occurrence: {
+        day: 'thursday',
+        week: 'first',
+      },
+    },
   ],
   hosts: [
     {
@@ -230,6 +240,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'SoundHouse',
       address: '28 Southampton St, Leicester LE1 1SJ',
       location: 'Leicester',
+    },
+    {
+      slug: 'dixie-arms',
+      name: 'The Dixie Arms',
+      address: '6 Main St, Market Bosworth, Nuneaton CV13 0JW',
+      location: 'Market Bosworth',
     },
   ]
 };
