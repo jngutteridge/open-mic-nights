@@ -133,6 +133,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'first',
       },
     },
+    {
+      hosts: ['fran', 'lucy'],
+      location: 'crown-inn',
+      when: 'The second Wednesday of the month',
+      time: '8pm',
+      occurrence: {
+        day: 'wednesday',
+        week: 'second',
+      },
+    },
   ],
   hosts: [
     {
@@ -246,6 +256,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Dixie Arms',
       address: '6 Main St, Market Bosworth, Nuneaton CV13 0JW',
       location: 'Market Bosworth',
+    },
+    {
+      slug: 'crown-inn',
+      name: 'Crown Inn',
+      address: '23 Church St, Appleby Magna, Swadlincote DE12 7BB',
+      location: 'Appleby Magna',
     },
   ]
 };
