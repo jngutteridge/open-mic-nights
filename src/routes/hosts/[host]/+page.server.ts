@@ -1,5 +1,6 @@
-import { openMicData, type Link } from '$lib/data';
 import { error } from '@sveltejs/kit';
+import { openMicData } from '$lib/data';
+import type { Link } from '$lib/data';
 
 export function load({ params: { host } }) {
   const hostData = openMicData.hosts.find(hostData => hostData.slug === host);
