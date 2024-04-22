@@ -13,6 +13,7 @@ export interface Event {
   occurrences?: Occurrence[];
   manualOccurrences?: string[]; // '2015-4-16'
   links?: Link[];
+  exceptions?: string[]; // '2015-4-16'
 }
 
 export interface Host {

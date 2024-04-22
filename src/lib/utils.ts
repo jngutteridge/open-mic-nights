@@ -57,6 +57,15 @@ export function getOccurrencesView(eventInput: Event | null = null) {
     }
 
     for (const event of events) {
+      let exception = false;
+      for (const exceptionDate of event?.exceptions ?? []) {
+        if (sameDate(exceptionDate, currentDate)) {
+          exception = true;
+        }
+      }
+      if (exception) {
+        continue;
+      }
       const location = openMicData.locations.find(location => location.slug === event?.location);
       for (const occurrence of (event?.occurrences ?? [event?.occurrence] ?? [])) {
         if (currentWeekDay === occurrence?.day && (currentWeek === occurrence.week || occurrence.week === 'last' && last || occurrence.week === 'every')) {
