@@ -10,11 +10,13 @@
   <div class="flex">
     <div class="p-4 grow">
       <h1 class="text-2xl text-balance">{ name }</h1>
+      {#if links}
       <ul class="flex gap-4 mt-4">
       {#each links as link}
         <li><a class="underline" target="_blank" href={link.href}><img class="bg-slate-50" src={`/${link.icon}.svg`} alt="" /></a></li>
       {/each}
       </ul>
+      {/if}
       <h2 class="mt-4 text-lg font-semibold">Events</h2>
       <ul class="gap-4 mt-2">
       {#each events as {name, when, slug}}
