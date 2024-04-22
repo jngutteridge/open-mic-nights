@@ -163,6 +163,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'second',
       },
     },
+    {
+      host: 'laurence-findley',
+      location: 'bulls-head-cosby',
+      when: 'The last Sunday of the month',
+      time: '5pm',
+      occurrence: {
+        day: 'sunday',
+        week: 'last',
+      },
+    },
   ],
   hosts: [
     {
@@ -233,6 +243,10 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      slug: 'laurence-findley',
+      name: 'Laurence Findley',
+    },
   ],
   locations: [
     {
@@ -294,6 +308,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Bull',
       address: '2 Main St, Broughton Astley, Leicester LE9 6RD',
       location: 'Broughton Astley',
+    },
+    {
+      slug: 'bulls-head-cosby',
+      name: 'The Bulls Head',
+      address: '2 The Nook, Cosby, Leicester LE9 1RQ',
+      location: 'Cosby',
     },
   ]
 };
