@@ -174,6 +174,20 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'last',
       },
     },
+    {
+      host: 'fran',
+      location: 'white-bear',
+      when: 'The fourth Monday of the month',
+      time: '7.30pm',
+      occurrence: {
+        day: 'monday',
+        week: 'fourth',
+      },
+      exceptions: [
+        '2024-04-22',
+        '2024-05-27',
+      ]
+    },
   ],
   hosts: [
     {
@@ -315,6 +329,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Bulls Head',
       address: '2 The Nook, Cosby, Leicester LE9 1RQ',
       location: 'Cosby',
+    },
+    {
+      slug: 'white-bear',
+      name: 'The White Bear',
+      address: '36 Coventry Rd, Hinckley LE10 0JT',
+      location: 'Hinckley',
     },
   ]
 };
