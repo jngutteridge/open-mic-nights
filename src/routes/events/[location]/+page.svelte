@@ -6,7 +6,7 @@
   $: hosts = data.hosts;
   $: events = data.events;
   $: address = data.address;
-  $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([name, address].join(' '));
+  $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([name, address].join(', '));
   $: start = data.start;
   $: when = data.when;
   $: where = data.where;
