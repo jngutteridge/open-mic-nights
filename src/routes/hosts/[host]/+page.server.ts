@@ -14,5 +14,5 @@ export function load({ params: { host } }) {
     return { slug: event.location, name: location?.name, when: event.when }
   }) as { name: string; slug: string; when: string; }[];
 
-  return { name: hostData.name, slug: hostData.slug, events, links: hostData.links as Link[] };
+  return { name: hostData.name, slug: hostData.slug, events, links: hostData.links || [] as Link[] };
 }
