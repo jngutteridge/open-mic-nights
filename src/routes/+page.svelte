@@ -9,6 +9,7 @@
   $: live = false;
   const occurrencesView = getOccurrencesView();
 </script>
+<img class="hidden" src="/white-bear.jpg" alt="" />
 <div class="p-4 pb-0">
   <p class="text-sm md:text-base">A list of open mic events in and around the Leicestershire area. Showing events in the next 90 days. Select an event for more information.</p>
 </div>
