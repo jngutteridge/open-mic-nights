@@ -188,6 +188,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         '2024-05-27',
       ]
     },
+    {
+      hosts: ['lucy', 'arron-westby'],
+      location: 'rose-and-crown',
+      when: 'The second Friday of the month',
+      time: '8pm',
+      occurrence: {
+        day: 'friday',
+        week: 'second',
+      },
+    },
   ],
   hosts: [
     {
@@ -262,6 +272,10 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       slug: 'laurence-findley',
       name: 'Laurence Findley',
     },
+    {
+      slug: 'arron-westby',
+      name: 'Arron Westby',
+    },
   ],
   locations: [
     {
@@ -335,6 +349,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The White Bear',
       address: '36 Coventry Rd, Hinckley LE10 0JT',
       location: 'Hinckley',
+    },
+    {
+      slug: 'rose-and-crown',
+      name: 'The Rose & Crown',
+      address: '6 Main St, Zouch, Loughborough LE12 5EQ',
+      location: 'Zouch',
     },
   ]
 };
