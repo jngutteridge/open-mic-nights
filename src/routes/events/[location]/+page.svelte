@@ -12,16 +12,17 @@
   $: where = data.where;
   $: links = data.links;
 </script>
-<div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-xl">
-  <div class="flex">
-    <div class="p-4 grow text-pretty">
-      <h1 class="text-2xl font-semibold">{ name } { where } open mic</h1>
-      <h2>Hosted by
-      {#each hosts as { name, slug }, index}
-        {#if index > 0 }<span class="mx-1">and</span>{/if}
-        <a class="underline" href={`/hosts/${slug}`}>{name}</a>
-      {/each}
-      </h2>
+<div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-xl flex">
+  <div class="flex flex-col grow">
+    <h1 class="p-4 md:pb-0 text-2xl text-pretty font-semibold">{ name } { where } open mic</h1>
+    <img class="w-full max-h-80 md:hidden object-cover object-center" src={`/${slug}.jpg`} alt="" />
+    <div class="p-4 md:pt-0 text-pretty">
+      {#if hosts.length === 1}
+        <h2>Hosted by <a class="underline" href={`/hosts/${hosts[0].slug}`}>{hosts[0].name}</a></h2>
+      {/if}
+      {#if hosts.length === 2}
+        <h2>Hosted by <a class="underline" href={`/hosts/${hosts[0].slug}`}>{hosts[0].name}</a> and <a class="underline" href={`/hosts/${hosts[1].slug}`}>{hosts[1].name}</a></h2>
+      {/if}
       <strong class="block font-semibold mt-4">{ name }</strong>
       <div class="block">
         <a class="underline" href={ mapsLink } target="_blank">{ address }</a>
@@ -36,12 +37,12 @@
       <h2 class="my-4 font-semibold">Upcoming events</h2>
       <ul class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-stretch gap-4">
       {#each events as event}
-        <li class="rounded-md bg-amber-700 text-white py-2 px-4 font-semibold text-center overflow-ellipsis whitespace-nowrap">{ event }</li>
+        <li class="rounded-md outline outline-white text-white py-1 px-2 font-semibold text-center overflow-ellipsis whitespace-nowrap">{ event }</li>
       {/each}
       </ul>
     </div>
-    <img class="w-[30vw] md:w-[40vw] object-cover object-top max-h-96 md:max-h-full max-w-md" src={`/${slug}.jpg`} alt="" />
   </div>
+  <img class="hidden md:block object-cover object-center max-h-full max-w-[50%]" src={`/${slug}.jpg`} alt="" />
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:p-4 pb-4 pt-0 md:pt-0 max-w-screen-xl">
   {#each hosts as host }
