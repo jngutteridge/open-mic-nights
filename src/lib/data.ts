@@ -198,6 +198,19 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'second',
       },
     },
+    {
+      host: 'liam-and-sean',
+      location: 'queens-arms-leire',
+      when: 'Every six weeks on a Tuesday',
+      time: '8pm',
+      manualOccurrences: [
+        '2024-06-04',
+        '2024-07-16',
+        '2024-08-27',
+        '2024-10-08',
+        '2024-11-19',
+      ],
+    }
   ],
   hosts: [
     {
@@ -355,6 +368,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Rose & Crown',
       address: '6 Main St, Zouch, Loughborough LE12 5EQ',
       location: 'Zouch',
+    },
+    {
+      slug: 'queens-arms-leire',
+      name: 'The Queens Arms',
+      address: 'Main St, Leire, Lutterworth LE17 5HF',
+      location: 'Leire',
     },
   ]
 };
