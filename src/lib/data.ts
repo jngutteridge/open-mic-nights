@@ -210,7 +210,17 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         '2024-10-08',
         '2024-11-19',
       ],
-    }
+    },
+    {
+      host: 'fran',
+      location: 'wentworth-arms-elmesthorpe',
+      when: 'The third Monday of the month',
+      time: '7pm',
+      occurrence: {
+        day: 'monday',
+        week: 'third',
+      },
+    },
   ],
   hosts: [
     {
@@ -375,5 +385,11 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       address: 'Main St, Leire, Lutterworth LE17 5HF',
       location: 'Leire',
     },
-  ]
+    {
+      slug: 'wentworth-arms-elmesthorpe',
+      name: 'Wentworth Arms',
+      address: 'Station Rd, Elmesthorpe, Leicester LE9 7SG',
+      location: 'Elmesthorpe',
+    },
+  ],
 };
