@@ -146,16 +146,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     },
     {
       host: 'fran',
-      location: 'tarro',
-      when: 'The third Wednesday of the month',
-      time: '7.30pm',
-      occurrence: {
-        day: 'wednesday',
-        week: 'third',
-      },
-    },
-    {
-      host: 'fran',
       location: 'bull-broughton',
       when: 'The second Monday of the month',
       time: '7.30pm',
@@ -338,12 +328,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Crown Inn',
       address: '23 Church St, Appleby Magna, Swadlincote DE12 7BB',
       location: 'Appleby Magna',
-    },
-    {
-      slug: 'tarro',
-      name: 'Tarro Lounge',
-      address: 'The Crescent, Hinckley LE10 0QQ',
-      location: 'Hinckley',
     },
     {
       slug: 'bull-broughton',
