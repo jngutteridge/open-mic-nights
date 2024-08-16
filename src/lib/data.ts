@@ -201,6 +201,23 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'third',
       },
     },
+    {
+      host: 'baker-and-crane',
+      location: 'royal-oak-cossington',
+      when: 'Usually the third Tuesday of the month',
+      time: '7.30pm',
+      occurrence: {
+        day: 'tuesday',
+        week: 'third',
+      },
+      exceptions: [
+        '2024-08-20',
+        '2024-09-17',
+      ],
+      manualOccurrences: [
+        '2024-09-24',
+      ],
+    },
   ],
   hosts: [
     {
@@ -358,6 +375,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Wentworth Arms',
       address: 'Station Rd, Elmesthorpe, Leicester LE9 7SG',
       location: 'Elmesthorpe',
+    },
+    {
+      slug: 'royal-oak-cossington',
+      name: 'The Royal Oak',
+      address: '105 Main St, Cossington, Leicester LE7 4UW',
+      location: 'Cossington',
     },
   ],
 };

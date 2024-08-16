@@ -11,7 +11,7 @@ export function load({ params: { host } }) {
 
   const events = openMicData.events.filter(event => (event?.hosts ?? [event.host]).includes(host)).map(event => {
     const location = openMicData.locations.find(location => location.slug === event.location);
-    return { slug: event.location, name: location?.name, when: event.when }
+    return { slug: event.location, name: `${location?.name} ${location?.location}`, when: event.when }
   }) as { name: string; slug: string; when: string; }[];
 
   return { name: hostData.name, slug: hostData.slug, events, links: hostData.links || [] as Link[] };
