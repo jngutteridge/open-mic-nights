@@ -218,6 +218,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         '2024-09-24',
       ],
     },
+    {
+      host: 'fran',
+      location: 'soar-bridge-inn',
+      when: 'The first Monday of the month',
+      time: '7.30pm',
+      occurrence: {
+        day: 'monday',
+        week: 'first',
+      },
+    },
   ],
   hosts: [
     {
@@ -381,6 +391,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Royal Oak',
       address: '105 Main St, Cossington, Leicester LE7 4UW',
       location: 'Cossington',
+    },
+    {
+      slug: 'soar-bridge-inn',
+      name: 'Soar Bridge Inn',
+      address: '29 Bridge St, Barrow upon Soar, Loughborough LE12 8PN',
+      location: 'Barrow upon Soar',
     },
   ],
 };
