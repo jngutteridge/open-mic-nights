@@ -228,6 +228,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'first',
       },
     },
+    {
+      host: 'lee-atkinson',
+      location: 'sir-robert-peel',
+      when: 'The first Monday of the month',
+      time: '7pm',
+      occurrence: {
+        day: 'monday',
+        week: 'first',
+      },
+    },
   ],
   hosts: [
     {
@@ -305,6 +315,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       slug: 'arron-westby',
       name: 'Arron Westby',
+    },
+    {
+      slug: 'lee-atkinson',
+      name: 'Lee Atkinson',
+      links: [
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/lee_plays_music/',
+        },
+      ],
     },
   ],
   locations: [
@@ -397,6 +417,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Soar Bridge Inn',
       address: '29 Bridge St, Barrow upon Soar, Loughborough LE12 8PN',
       location: 'Barrow upon Soar',
+    },
+    {
+      slug: 'sir-robert-peel',
+      name: 'Sir Robert Peel',
+      address: '50 Jarrom St, Leicester LE2 7DD',
+      location: 'Leicester',
     },
   ],
 };
