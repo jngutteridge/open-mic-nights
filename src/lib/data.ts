@@ -65,11 +65,11 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     },
     {
       host: 'baker-and-crane',
-      location: 'royal-oak',
+      location: 'royal-oak-rothley',
       time: '7pm',
-      when: 'The third Thursday of the month',
+      when: 'The third Sunday of the month',
       occurrence: {
-        day: 'thursday',
+        day: 'sunday',
         week: 'third',
       },
     },
@@ -294,7 +294,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       location: 'Hinckley',
     },
     {
-      slug: 'royal-oak',
+      slug: 'royal-oak-rothley',
       name: 'The Royal Oak',
       address: '14 Cross Grn, Rothley, Leicester LE7 7PF',
       location: 'Rothley',
