@@ -72,6 +72,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'sunday',
         week: 'third',
       },
+      exceptions: [
+        '2024-09-15',
+      ],
+      manualOccurrences: [
+        '2024-09-29',
+      ],
     },
     {
       host: 'liam-and-sean',
