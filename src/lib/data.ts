@@ -66,7 +66,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       host: 'baker-and-crane',
       location: 'royal-oak-rothley',
-      time: '7pm',
+      time: '5pm',
       when: 'The third Sunday of the month',
       occurrence: {
         day: 'sunday',
@@ -210,7 +210,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       host: 'baker-and-crane',
       location: 'royal-oak-cossington',
-      when: 'Usually the third Tuesday of the month',
+      when: 'Usually the third or last Tuesday of the month',
       time: '7.30pm',
       occurrence: {
         day: 'tuesday',
@@ -219,9 +219,11 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       exceptions: [
         '2024-08-20',
         '2024-09-17',
+        '2024-10-15',
       ],
       manualOccurrences: [
         '2024-09-24',
+        '2024-10-29',
       ],
     },
     {
