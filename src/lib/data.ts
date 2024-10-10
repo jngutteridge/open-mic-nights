@@ -159,6 +159,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'monday',
         week: 'second',
       },
+      exceptions: [
+        '2024-10-14',
+      ],
+      manualOccurrences: [
+        '2024-10-18',
+      ],
     },
     {
       host: 'laurence-findley',
