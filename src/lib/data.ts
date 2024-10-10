@@ -236,16 +236,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'first',
       },
     },
-    {
-      host: 'lee-atkinson',
-      location: 'sir-robert-peel',
-      when: 'The first Monday of the month',
-      time: '7pm',
-      occurrence: {
-        day: 'monday',
-        week: 'first',
-      },
-    },
   ],
   hosts: [
     {
