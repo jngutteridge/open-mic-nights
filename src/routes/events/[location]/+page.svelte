@@ -15,7 +15,7 @@
 <div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-xl flex">
   <div class="flex flex-col grow">
     <h1 class="p-4 md:pb-0 text-2xl text-pretty font-semibold">{ name } { where } open mic</h1>
-    <img class="w-full max-h-80 md:hidden object-cover object-center" src={`/${slug}.jpg`} alt="" />
+    <img class="w-full max-h-80 md:hidden object-cover object-top" src={`/${slug}.jpg`} alt="" />
     <div class="p-4 md:pt-0 text-pretty">
       {#if hosts.length === 1}
         <h2>Hosted by <a class="underline" href={`/hosts/${hosts[0].slug}`}>{hosts[0].name}</a></h2>
@@ -29,7 +29,7 @@
       </div>
       <p class="mt-4">{ when }</p>
       <p>Start time { start }</p>
-      <ul class="gap-4 mt-4">
+      <ul class="flex gap-4 mt-4">
       {#each links as link}
         <li><a class="underline" target="_blank" href={link.href}><img class="bg-slate-50" src={`/${link.icon}.svg`} alt="" /></a></li>
       {/each}

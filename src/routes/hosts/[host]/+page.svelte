@@ -10,7 +10,7 @@
   <div class="flex">
     <div class="p-4 grow">
       <h1 class="text-2xl text-balance">{ name }</h1>
-      <img class="w-full max-h-80 mt-4 md:hidden object-cover object-center" src={`/${slug}.jpg`} alt="" />
+      <img class="w-full max-h-80 mt-4 md:hidden object-cover object-top" src={`/${slug}.jpg`} alt="" />
       {#if links}
       <ul class="flex gap-4 mt-4">
       {#each links as link}
