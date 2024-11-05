@@ -257,6 +257,19 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      hosts: [
+        'fran',
+        'chris-sergent',
+      ],
+      location: 'three-tuns',
+      when: 'The third Wednesday of the month',
+      time: '7.30pm',
+      occurrence: {
+        day: 'wednesday',
+        week: 'third',
+      },
+    }
   ],
   hosts: [
     {
@@ -365,6 +378,10 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      slug: 'chris-sergent',
+      name: 'Chris Sergent',
+    }
   ],
   locations: [
     {
@@ -468,6 +485,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Baton Rouge at Queens',
       address: 'Queen\'s Building, 41 Rutland St, Leicester LE1 1RE',
       location: 'Leicester',
+    },
+    {
+      slug: 'three-tuns',
+      name: 'The Three Tuns',
+      address: '16 West End, Barlestone, Nuneaton CV13 0EJ',
+      location: 'Barlestone',
     },
   ],
 };
