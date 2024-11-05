@@ -232,6 +232,26 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'first',
       },
     },
+    {
+      host: 'peter-davis',
+      location: 'baton-rouge-queens',
+      when: 'The first Thursday of the month',
+      time: '8pm',
+      occurrence: {
+        day: 'thursday',
+        week: 'first',
+      },
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/profile.php?id=61558099981041',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/batonrougeatqueens/',
+        },
+      ],
+    },
   ],
   hosts: [
     {
@@ -317,6 +337,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/lee_plays_music/',
+        },
+      ],
+    },
+    {
+      slug: 'peter-davis',
+      name: 'Peter Davis',
+      links: [
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/peterdavismusic/',
         },
       ],
     },
@@ -416,6 +446,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       slug: 'sir-robert-peel',
       name: 'Sir Robert Peel',
       address: '50 Jarrom St, Leicester LE2 7DD',
+      location: 'Leicester',
+    },
+    {
+      slug: 'baton-rouge-queens',
+      name: 'Baton Rouge at Queens',
+      address: 'Queen\'s Building, 41 Rutland St, Leicester LE1 1RE',
       location: 'Leicester',
     },
   ],
