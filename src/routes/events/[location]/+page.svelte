@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { LinksList } from "$lib/components";
+
   export let data;
 
   $: name = data.name;
@@ -13,7 +15,7 @@
   $: links = data.links;
 </script>
 <div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-xl flex">
-  <div class="flex flex-col grow">
+  <div class="grow">
     <h1 class="p-4 md:pb-0 text-2xl text-pretty font-semibold">{ name } { where } open mic</h1>
     <img class="w-full max-h-80 md:hidden object-cover object-top" src={`/${slug}.jpg`} alt="" />
     <div class="p-4 md:pt-0 text-pretty">
@@ -29,11 +31,7 @@
       </div>
       <p class="mt-4">{ when }</p>
       <p>Start time { start }</p>
-      <ul class="flex gap-4 mt-4">
-      {#each links as link}
-        <li><a class="underline" target="_blank" href={link.href}><img class="bg-slate-50" src={`/${link.icon}.svg`} alt="" /></a></li>
-      {/each}
-      </ul>
+      <LinksList {links} />
       <h2 class="my-4 font-semibold">Upcoming events</h2>
       <ul class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-stretch gap-4">
       {#each events as event}

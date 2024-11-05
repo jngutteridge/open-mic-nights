@@ -8,8 +8,9 @@
 </header>
 <div class="p-4 pb-0">
   <nav class="flex gap-4 justify-center md:justify-start">
-    <a class={'inline-block font-semibold py-2 px-3 text-sm hover:bg-amber-700 rounded-md ' + (slug === '/' ? ' bg-amber-700 outline' : 'bg-amber-900')} href="/">Upcoming events</a>
-    <a class={'inline-block font-semibold py-2 px-3 text-sm hover:bg-amber-700 rounded-md ' + (slug === '/featured-events/' ? ' bg-amber-700 outline' : 'bg-amber-900')} href="/featured-events/">Featured open mics</a>
+    <a class={'inline-block font-semibold pt-2 pb-3 px-3 text-sm md:text-base hover:bg-amber-700 rounded-md ' + (slug === '/' ? ' bg-amber-700 outline' : 'bg-amber-900')} href="/">Upcoming events</a>
+    <a class={'inline-block font-semibold pt-2 pb-3 px-3 text-sm md:text-base hover:bg-amber-700 rounded-md ' + (slug === '/featured-events/' ? ' bg-amber-700 outline' : 'bg-amber-900')} href="/featured-events/">Featured open mics</a>
+    <a class={'inline-block font-semibold pt-2 pb-3 px-3 text-sm md:text-base hover:bg-amber-700 rounded-md ' + (slug === '/calendar/' ? ' bg-amber-700 outline' : 'bg-amber-900')} href="/calendar/">Calendar view</a>
   </nav>
 </div>
 <slot />

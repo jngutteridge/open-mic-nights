@@ -25,6 +25,7 @@ export interface Host {
 export interface Link {
   icon: string;
   href: string;
+  description: string;
 }
 
 export interface Location {
@@ -101,6 +102,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'facebook',
           href: 'https://www.facebook.com/groups/889249722600945',
+          description: 'Facebook group',
         },
       ],
     },
@@ -127,6 +129,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'facebook',
           href: 'https://www.facebook.com/groups/845464738850535',
+          description: 'Facebook group',
         },
       ],
     },
@@ -245,10 +248,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'facebook',
           href: 'https://www.facebook.com/profile.php?id=61558099981041',
+          description: 'Facebook page',
         },
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/batonrougeatqueens/',
+          description: 'Instagram page',
         },
       ],
     },
@@ -261,6 +266,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/humblehe/',
+          description: 'Instagram page',
         },
       ],
     },
@@ -271,6 +277,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'facebook',
           href: 'https://www.facebook.com/LucyBremridgeMusic',
+          description: 'Facebook page',
         },
       ],
     },
@@ -281,10 +288,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'facebook',
           href: 'https://www.facebook.com/profile.php?id=61556521434582',
+          description: 'Facebook page',
         },
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/francescahattonmurdenmusic/',
+          description: 'Instagram page',
         },
       ],
     },
@@ -295,10 +304,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'facebook',
           href: 'https://www.facebook.com/BakerandCrane',
+          description: 'Facebook page',
         },
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/baker.crane/',
+          description: 'Instagram page',
         },
       ],
     },
@@ -309,6 +320,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'facebook',
           href: 'https://www.facebook.com/liamandseanacousticduo/',
+          description: 'Facebook page',
         },
       ],
     },
@@ -319,6 +331,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'facebook',
           href: 'https://www.facebook.com/profile.php?id=100063776326890',
+          description: 'Facebook page',
         },
       ],
     },
@@ -337,6 +350,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/lee_plays_music/',
+          description: 'Facebook page',
         },
       ],
     },
@@ -347,6 +361,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/peterdavismusic/',
+          description: 'Instagram page',
         },
       ],
     },
