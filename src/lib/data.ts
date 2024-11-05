@@ -204,16 +204,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      host: 'fran',
-      location: 'wentworth-arms-elmesthorpe',
-      when: 'The third Monday of the month',
-      time: '7pm',
-      occurrence: {
-        day: 'monday',
-        week: 'third',
-      },
-    },
-    {
       host: 'baker-and-crane',
       location: 'royal-oak-cossington',
       when: 'Usually the third or last Tuesday of the month',
