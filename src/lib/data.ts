@@ -259,6 +259,22 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'wednesday',
         week: 'third',
       },
+    },
+    {
+      host: 'jack-and-tasha',
+      location: 'grand-union',
+      when: 'The second and fourth Thursday of the month',
+      time: '7.30pm',
+      occurrences: [
+        {
+          day: 'thursday',
+          week: 'second',
+        },
+        {
+          day: 'thursday',
+          week: 'third',
+        },
+      ],
     }
   ],
   hosts: [
@@ -371,7 +387,23 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       slug: 'chris-sergent',
       name: 'Chris Sergent',
-    }
+    },
+    {
+      slug: 'jack-and-tasha',
+      name: 'Jack & Tasha',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/jack.tasha.duo/',
+          description: 'Facebook page',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/jack_and_tash/',
+          description: 'Instagram page',
+        },
+      ],
+    },
   ],
   locations: [
     {
@@ -481,6 +513,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Three Tuns',
       address: '16 West End, Barlestone, Nuneaton CV13 0EJ',
       location: 'Barlestone',
+    },
+    {
+      slug: 'grand-union',
+      name: 'The Grand Union',
+      address: '24 King St, Leicester LE1 6RL',
+      location: 'Leicester',
     },
   ],
 };
