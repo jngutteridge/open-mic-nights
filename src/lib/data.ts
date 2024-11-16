@@ -170,16 +170,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      host: 'laurence-findley',
-      location: 'bulls-head-cosby',
-      when: 'The last Sunday of the month',
-      time: '5pm',
-      occurrence: {
-        day: 'sunday',
-        week: 'last',
-      },
-    },
-    {
       host: 'fran',
       location: 'white-bear',
       when: 'The fourth Monday of the month',
