@@ -272,7 +272,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
         {
           day: 'thursday',
-          week: 'third',
+          week: 'fourth',
         },
       ],
     }
