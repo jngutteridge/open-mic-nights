@@ -6,6 +6,7 @@ export interface Occurrence {
 export interface Event {
   hosts?: string[];
   host?: string;
+  title?: string;
   location: string;
   time: string;
   when: string;
@@ -32,6 +33,7 @@ export interface Location {
   name: string;
   slug: string;
   address: string;
+  mapsAddress?: string;
   location: string;
 }
 
@@ -275,7 +277,25 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
           week: 'fourth',
         },
       ],
-    }
+    },
+    {
+      host: 'simon-day',
+      location: 'red-cow',
+      title: 'Acoustic Night at The Red Cow Market Harborough',
+      when: 'The first Thursday of the month',
+      time: '8pm',
+      occurrence: {
+        day: 'thursday',
+        week: 'first',
+      },
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/groups/178638732636123',
+          description: 'Market Harborough Open Mic Collective',
+        },
+      ],
+    },
   ],
   hosts: [
     {
@@ -404,6 +424,10 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      slug: 'simon-day',
+      name: 'Simon Day',
+    },
   ],
   locations: [
     {
@@ -519,6 +543,13 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Grand Union',
       address: '24 King St, Leicester LE1 6RL',
       location: 'Leicester',
+    },
+    {
+      slug: 'red-cow',
+      name: 'Red Cow',
+      address: '59-60 High St, Market Harborough LE16 7AF',
+      mapsAddress: 'The Red Cow Pub, 59-60 High St, Market Harborough LE16 7AF',
+      location: 'Market Harborough',
     },
   ],
 };

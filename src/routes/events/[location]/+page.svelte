@@ -8,15 +8,16 @@
   $: hosts = data.hosts;
   $: events = data.events;
   $: address = data.address;
-  $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([name, address].join(', '));
+  $: mapsAddress = data.mapsAddress ?? encodeURIComponent([name, address].join(', '));
+  $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + mapsAddress;
   $: start = data.start;
   $: when = data.when;
-  $: where = data.where;
   $: links = data.links;
+  $: title = data.title;
 </script>
 <div class="my-4 md:m-4 md:rounded-xl bg-slate-800 overflow-hidden max-w-screen-xl flex">
   <div class="grow">
-    <h1 class="p-4 md:pb-0 text-2xl text-pretty font-semibold">{ name } { where } open mic</h1>
+    <h1 class="p-4 md:pb-0 text-2xl text-pretty font-semibold">{title}</h1>
     <img class="w-full max-h-80 md:hidden object-cover object-top" src={`/${slug}.jpg`} alt="" />
     <div class="p-4 md:pt-0 text-pretty">
       {#if hosts.length === 1}
@@ -60,5 +61,5 @@
   {/each}
 </div>
 <svelte:head>
-  <title>{ name } Leicester open mic hosted by { hosts.map(host => host.name).join(' and ') }</title>
+  <title>{ title } hosted by { hosts.map(host => host.name).join(' and ') }</title>
 </svelte:head>

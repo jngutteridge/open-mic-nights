@@ -23,12 +23,13 @@ export function load({ params: { location } }) {
   return {
     name: locationData.name,
     address: locationData.address,
+    mapsAddress: locationData.mapsAddress,
     slug: locationData.slug,
     hosts,
     events,
     start: event.time,
     when: event.when,
-    where: locationData.location,
     links: event?.links ?? [],
+    title: event.title ?? `${locationData.name} ${locationData.location} open mic`,
   };
 }
