@@ -303,6 +303,15 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ],
     },
+    {
+      host: 'baker-and-crane',
+      location: 'birstall-social-club',
+      time: '5pm',
+      when: 'The second Sunday of the month',
+      manualOccurrences: [
+        '2025-01-12',
+      ],
+    },
   ],
   hosts: [
     {
@@ -557,6 +566,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       address: '59-60 High St, Market Harborough LE16 7AF',
       mapsAddress: 'The Red Cow Pub, 59-60 High St, Market Harborough LE16 7AF',
       location: 'Market Harborough',
+    },
+    {
+      slug: 'birstall-social-club',
+      name: 'Social Club',
+      address: '16-18 Wanlip Ln, Birstall, Leicester LE4 4JS',
+      location: 'Birstall',
     },
   ],
 };
