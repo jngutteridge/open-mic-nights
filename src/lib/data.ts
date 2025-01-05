@@ -77,6 +77,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       },
       exceptions: [
         '2024-09-15',
+        '2024-12-15',
       ],
       manualOccurrences: [
         '2024-09-29',
