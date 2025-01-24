@@ -4,7 +4,8 @@
 
   export let data;
 
-  $: events = getOccurrencesView(data.event).map(event => event.date);
+  $: event = data.event;
+  $: events = getOccurrencesView(event).map(event => event.date);
   $: name = data.name;
   $: slug = data.slug;
   $: hosts = data.hosts;
