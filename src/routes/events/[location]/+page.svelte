@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { LinksList } from "$lib/components";
-	import { openMicData } from "$lib/data";
   import { getOccurrencesView } from '$lib/utils';
 
   export let data;
 
-  const events = getOccurrencesView(openMicData.events.find(event => event.location === data.location)).map(occurrence => occurrence.date);
+  const events = getOccurrencesView(data.events).map(occurrence => occurrence.date);
 
   $: name = data.name;
   $: slug = data.slug;
