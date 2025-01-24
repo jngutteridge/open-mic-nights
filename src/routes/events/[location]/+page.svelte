@@ -4,8 +4,7 @@
 
   export let data;
 
-  const events = getOccurrencesView(data.event).map(event => event.date);
-
+  $: events = getOccurrencesView(data.event).map(event => event.date);
   $: name = data.name;
   $: slug = data.slug;
   $: hosts = data.hosts;
