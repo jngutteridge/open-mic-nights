@@ -23,7 +23,7 @@ export function load({ params: { location } }) {
     mapsAddress: locationData.mapsAddress,
     slug: locationData.slug,
     hosts,
-    events: openMicData.events.find(event => event.location === location),
+    location,
     start: event.time,
     when: event.when,
     links: event?.links ?? [],
