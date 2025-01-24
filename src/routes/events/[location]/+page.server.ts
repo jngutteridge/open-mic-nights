@@ -1,6 +1,5 @@
 import { error } from '@sveltejs/kit';
 import { openMicData } from '$lib/data';
-import { getOccurrencesView } from '$lib/utils';
 
 export function load({ params: { location } }) {
 
@@ -18,15 +17,13 @@ export function load({ params: { location } }) {
 
   const hosts = openMicData.hosts.filter(host => (event?.hosts ?? [event.host]).includes(host.slug));
 
-  const events = getOccurrencesView(openMicData.events.find(event => event.location === location)).map(occurrence => occurrence.date);
-
   return {
     name: locationData.name,
     address: locationData.address,
     mapsAddress: locationData.mapsAddress,
     slug: locationData.slug,
     hosts,
-    events,
+    event: event,
     start: event.time,
     when: event.when,
     links: event?.links ?? [],

@@ -1,12 +1,14 @@
 <script lang="ts">
 	import { LinksList } from "$lib/components";
+  import { getOccurrencesView } from '$lib/utils';
 
   export let data;
+
+  const events = getOccurrencesView(data.event).map(event => event.date);
 
   $: name = data.name;
   $: slug = data.slug;
   $: hosts = data.hosts;
-  $: events = data.events;
   $: address = data.address;
   $: mapsAddress = data.mapsAddress ?? encodeURIComponent([name, address].join(', '));
   $: mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + mapsAddress;
