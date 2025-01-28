@@ -308,6 +308,27 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         '2025-01-12',
       ],
     },
+    {
+      location: 'loaded-dog',
+      time: '7.30pm',
+      when: 'Every Monday',
+      occurrence: {
+        day: 'monday',
+        week: 'every',
+      },
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/LoadedDog',
+          description: 'Facebook page',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/LoadedDogLeics/',
+          description: 'Instagram page'
+        },
+      ]
+    },
   ],
   hosts: [
     {
@@ -568,6 +589,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Social Club',
       address: '16-18 Wanlip Ln, Birstall, Leicester LE4 4JS',
       location: 'Birstall',
+    },
+    {
+      slug: 'loaded-dog',
+      name: 'The Loaded Dog',
+      address: '144 London Rd, Leicester LE2 1ED',
+      location: 'Leicester',
     },
   ],
 };
