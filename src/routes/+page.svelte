@@ -19,7 +19,9 @@
     <div class="p-4 grow col-span-2 text-pretty">
       <span class="text-amber-400">{ date }</span>
       <h2 class="font-bold">{ title } { where }</h2>
-      <span>With { hosts }</span>
+      {#if hosts}
+        <span>With { hosts }</span>
+      {/if}
     </div>
     <img class="w-40 min-w-full h-40 object-cover object-top" src={`/${slug}.jpg`} alt="" />
     <a href={`/events/${slug}`} class="absolute inset-0"><span class="hidden">More information</span></a>
