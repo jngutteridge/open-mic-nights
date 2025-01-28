@@ -229,18 +229,14 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       },
     },
     {
-      host: 'peter-davis',
+      host: 'jack-and-tasha',
       location: 'baton-rouge-queens',
-      when: 'The second and fourth Thursday of the month',
+      when: 'The third Thursday of the month',
       time: '8pm',
       occurrences: [
         {
           day: 'thursday',
-          week: 'second',
-        },
-        {
-          day: 'thursday',
-          week: 'fourth',
+          week: 'third',
         },
       ],
       links: [
