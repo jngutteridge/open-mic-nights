@@ -75,32 +75,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'sunday',
         week: 'third',
       },
-      exceptions: [
-        '2024-09-15',
-        '2024-12-15',
-      ],
-      manualOccurrences: [
-        '2024-09-29',
-      ],
     },
     {
       host: 'liam-and-sean',
       location: 'railway',
       time: '5pm',
       when: 'Usually the last or penultimate Sunday of the month',
-      manualOccurrences: [
-        '2024-2-25',
-        '2024-3-24',
-        '2024-4-21',
-        '2024-5-19',
-        '2024-6-23',
-        '2024-7-7',
-        '2024-8-18',
-        '2024-9-29',
-        '2024-10-27',
-        '2024-11-24',
-        '2024-12-22',
-      ],
       links: [
         {
           icon: 'facebook',
@@ -155,12 +135,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'monday',
         week: 'second',
       },
-      exceptions: [
-        '2024-10-14',
-      ],
-      manualOccurrences: [
-        '2024-10-18',
-      ],
     },
     {
       host: 'fran',
@@ -171,23 +145,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'monday',
         week: 'fourth',
       },
-      exceptions: [
-        '2024-04-22',
-        '2024-05-27',
-      ]
     },
     {
       host: 'liam-and-sean',
       location: 'queens-arms-leire',
       when: 'Every six weeks on a Tuesday',
       time: '8pm',
-      manualOccurrences: [
-        '2024-06-04',
-        '2024-07-09',
-        '2024-08-27',
-        '2024-10-08',
-        '2024-11-19',
-      ],
     },
     {
       host: 'baker-and-crane',
@@ -195,8 +158,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       when: 'Usually the third or last Tuesday of the month',
       time: '7.30pm',
       manualOccurrences: [
-        '2024-09-24',
-        '2024-10-29',
         '2025-02-25',
       ],
     },

@@ -6,10 +6,17 @@ function getWeekDayOfTheMonth(date: Date) {
   return Math.ceil((date.getDate()) / 7) - 1;
 }
 
+function hasNoDates(event: Event) {
+  return !event.occurrence && !event.occurrences && !event.manualOccurrences;
+}
+
 export function getEventsView() {
   const eventsView: { title: string, hosts: string, when: string, slug: string, where: string; }[] = [];
 
   for (const event of openMicData.events) {
+    if (hasNoDates(event)) {
+      continue;
+    }
     const location = openMicData.locations.find(location => location.slug === event.location);
     const item = {
       title: location?.name ?? '',
