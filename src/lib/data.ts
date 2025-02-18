@@ -329,6 +329,22 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'third',
       },
     },
+    {
+      location: 'black-dog',
+      time: '3pm',
+      when: 'Usually the first Sunday of the month',
+      occurrence: {
+        day: 'sunday',
+        week: 'first',
+      },
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/events/1172377943752104',
+          description: 'Facebook event',
+        }
+      ]
+    },
   ],
   hosts: [
     {
@@ -601,6 +617,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Axe & Square',
       address: '22 Wigston St, Countesthorpe, Leicester LE8 5RQ',
       location: 'Countesthorpe',
+    },
+    {
+      slug: 'black-dog',
+      name: 'The Black Dog',
+      address: '23 London Rd, Oadby, Leicester LE2 5DL',
+      location: 'Oadby',
     },
   ],
 };
