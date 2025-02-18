@@ -329,6 +329,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         },
       ]
     },
+    {
+      location: 'axe-and-square',
+      host: 'fran',
+      time: '7.30pm',
+      when: 'The third Monday of the month',
+      occurrence: {
+        day: 'monday',
+        week: 'third',
+      },
+    },
   ],
   hosts: [
     {
@@ -595,6 +605,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Loaded Dog',
       address: '144 London Rd, Leicester LE2 1ED',
       location: 'Leicester',
+    },
+    {
+      slug: 'axe-and-square',
+      name: 'The Axe & Square',
+      address: '22 Wigston St, Countesthorpe, Leicester LE8 5RQ',
+      location: 'Countesthorpe',
     },
   ],
 };
