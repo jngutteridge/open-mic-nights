@@ -194,18 +194,10 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       location: 'royal-oak-cossington',
       when: 'Usually the third or last Tuesday of the month',
       time: '7.30pm',
-      occurrence: {
-        day: 'tuesday',
-        week: 'third',
-      },
-      exceptions: [
-        '2024-08-20',
-        '2024-09-17',
-        '2024-10-15',
-      ],
       manualOccurrences: [
         '2024-09-24',
         '2024-10-29',
+        '2025-02-25',
       ],
     },
     {
