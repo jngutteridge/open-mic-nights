@@ -110,16 +110,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      host: 'fran',
-      location: 'volpo',
-      time: '7.30pm',
-      when: 'The last Wednesday of the month',
-      occurrence: {
-        day: 'wednesday',
-        week: 'last',
-      },
-    },
-    {
       host: 'open-mike',
       location: 'soundhouse',
       when: 'Every Tuesday',
