@@ -299,6 +299,22 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         }
       ]
     },
+    {
+      location: 'james-bistro',
+      time: '6pm',
+      when: 'The last Friday of the month',
+      occurrence: {
+        day: 'friday',
+        week: 'last',
+      },
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/events/926805419604384',
+          description: 'Facebook event',
+        }
+      ]
+    },
   ],
   hosts: [
     {
@@ -577,6 +593,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Black Dog',
       address: '23 London Rd, Oadby, Leicester LE2 5DL',
       location: 'Oadby',
+    },
+    {
+      slug: 'james-bistro',
+      name: 'James\' Bistro',
+      address: '5 East Bond Street, Leicester, United Kingdom LE1 4SX',
+      location: 'Leicester',
     },
   ],
 };
