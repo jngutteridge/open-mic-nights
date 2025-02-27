@@ -249,6 +249,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       when: 'The second Sunday of the month',
       manualOccurrences: [
         '2025-01-12',
+        '2025-03-09',
       ],
     },
     {
