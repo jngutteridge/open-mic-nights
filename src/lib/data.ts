@@ -315,6 +315,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         }
       ]
     },
+    {
+      hosts: ['lucy', 'arron-westby'],
+      location: 'rose-and-crown',
+      when: 'The second Friday of the month',
+      time: '8pm',
+      occurrence: {
+        day: 'friday',
+        week: 'second',
+      },
+    },
   ],
   hosts: [
     {
@@ -599,6 +609,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'James\' Bistro',
       address: '5 East Bond Street, Leicester, United Kingdom LE1 4SX',
       location: 'Leicester',
+    },
+    {
+      slug: 'rose-and-crown',
+      name: 'The Rose & Crown',
+      address: '6 Main St, Zouch, Loughborough LE12 5EQ',
+      location: 'Zouch',
     },
   ],
 };
