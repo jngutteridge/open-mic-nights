@@ -70,11 +70,10 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       host: 'baker-and-crane',
       location: 'royal-oak-rothley',
       time: '5pm',
-      when: 'The third Sunday of the month',
-      occurrence: {
-        day: 'sunday',
-        week: 'third',
-      },
+      when: 'Usually around the third Sunday of the month',
+      manualOccurrences: [
+        '2025-03-23'
+      ],
     },
     {
       host: 'liam-and-sean',
@@ -159,6 +158,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       time: '7.30pm',
       manualOccurrences: [
         '2025-02-25',
+        '2025-03-25',
       ],
     },
     {
