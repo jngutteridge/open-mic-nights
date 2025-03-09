@@ -310,8 +310,8 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       links: [
         {
           icon: 'facebook',
-          href: 'https://www.facebook.com/events/926805419604384',
-          description: 'Facebook event',
+          href: 'https://www.facebook.com/groups/1305211636615435',
+          description: 'Facebook group',
         }
       ]
     },
