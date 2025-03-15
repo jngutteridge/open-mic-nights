@@ -321,6 +321,23 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         week: 'second',
       },
     },
+    {
+      host: 'altered-ego',
+      location: 'sir-robert-peel',
+      when: 'The last Friday of the month',
+      time: '7pm',
+      occurrence: {
+        day: 'friday',
+        week: 'last',
+      },
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/events/635225235654174',
+          description: 'Facebook event',
+        }
+      ],
+    }
   ],
   hosts: [
     {
@@ -414,7 +431,23 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/lee_plays_music/',
+          description: 'Instagram page',
+        },
+      ],
+    },
+    {
+      slug: 'altered-ego',
+      name: 'Altered Ego',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/profile.php?id=61571991301153',
           description: 'Facebook page',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/wearealteredego/',
+          description: 'Instagram page',
         },
       ],
     },
