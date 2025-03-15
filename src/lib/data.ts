@@ -330,6 +330,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'friday',
         week: 'last',
       },
+      manualOccurrences: [
+        '2025-03-21',
+      ],
+      exceptions: [
+        '2025-03-28',
+      ],
       links: [
         {
           icon: 'facebook',
