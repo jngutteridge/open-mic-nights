@@ -256,10 +256,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       location: 'loaded-dog',
       time: '7.30pm',
       when: 'Every Monday',
-      occurrence: {
-        day: 'monday',
-        week: 'every',
-      },
       links: [
         {
           icon: 'facebook',
