@@ -335,7 +335,17 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
           description: 'Facebook event',
         }
       ],
-    }
+    },
+    {
+      host: 'jimmy-johnson',
+      location: 'chequers-country-inn',
+      when: 'The last Wednesday of the month',
+      time: '7pm',
+      occurrence: {
+        day: 'wednesday',
+        week: 'last',
+      },
+    },
   ],
   hosts: [
     {
@@ -483,6 +493,22 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       slug: 'simon-day',
       name: 'Simon Day',
+    },
+    {
+      slug: 'jimmy-johnson',
+      name: 'Jimmy Johnson',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/profile.php?id=100061274857182',
+          description: 'Facebook profile',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/jimmyjohnsonmusic/',
+          description: 'Instagram page',
+        },
+      ],
     },
   ],
   locations: [
@@ -642,6 +668,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Rose & Crown',
       address: '6 Main St, Zouch, Loughborough LE12 5EQ',
       location: 'Zouch',
+    },
+    {
+      slug: 'chequers-country-inn',
+      name: 'Chequers Country Inn',
+      address: 'Ullesthorpe, Lutterworth LE17 5BT',
+      location: 'Ullesthorpe',
     },
   ],
 };
