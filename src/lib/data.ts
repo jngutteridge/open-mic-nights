@@ -40,17 +40,6 @@ export interface Location {
 export const openMicData: { events: Event[], hosts: Host[], locations: Location[] } = {
   events: [
     {
-      hosts: ['fran', 'lucy'],
-      location: 'clarence',
-      time: '7.30pm',
-      when: 'The first Wednesday of the month',
-      occurrence:
-      {
-        day: 'wednesday',
-        week: 'first'
-      },
-    },
-    {
       host: 'humble-he',
       location: 'babelas',
       time: '7.30pm',
