@@ -61,7 +61,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       time: '5pm',
       when: 'Usually around the third Sunday of the month',
       manualOccurrences: [
-        '2025-03-23'
+        '2025-04-27',
       ],
     },
     {
@@ -69,6 +69,9 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       location: 'railway',
       time: '5pm',
       when: 'Usually the last or penultimate Sunday of the month',
+      manualOccurrences: [
+        '2025-04-27',
+      ],
       links: [
         {
           icon: 'facebook',
