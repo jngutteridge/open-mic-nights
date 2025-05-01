@@ -188,11 +188,8 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      hosts: [
-        'fran',
-        'chris-sergent',
-      ],
-      location: 'three-tuns',
+      host: 'chris-sergent',
+      location: 'red-lion-sapcote',
       when: 'The third Wednesday of the month',
       time: '7.30pm',
       occurrence: {
@@ -345,6 +342,23 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'wednesday',
         week: 'last',
       },
+    },
+    {
+      hosts: ['fran', 'lucy'],
+      location: 'elephant-and-castle',
+      when: 'The last Wednesday of the month',
+      time: '7.30pm',
+      occurrence: {
+        day: 'wednesday',
+        week: 'last',
+      },
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/profile.php?id=61575105931541',
+          icon: 'facebook',
+        },
+      ],
     },
   ],
   hosts: [
@@ -674,6 +688,18 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Chequers Country Inn',
       address: 'Ullesthorpe, Lutterworth LE17 5BT',
       location: 'Ullesthorpe',
+    },
+    {
+      slug: 'elephant-and-castle',
+      name: 'Elephant and Castle',
+      address: '26 Main St, Thurlaston, Leicester LE9 7TP',
+      location: 'Thurlaston',
+    },
+    {
+      slug: 'red-lion-sapcote',
+      name: 'Red Lion',
+      address: '8 Church St, Sapcote, Leicester LE9 4FG',
+      location: 'Sapcote',
     },
   ],
 };
