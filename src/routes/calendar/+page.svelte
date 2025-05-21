@@ -3,20 +3,20 @@
     const viewData = getCalendarView();
     const viewDays = getCalendarDays();
   </script>
-  <div class="max-w-[100vw] overflow-auto h-[calc(100vh-240px)] min-h-[400px] relative  my-4">
-  <ul class="grid grid-cols-7 animate-pull bg-slate-700 gap-[1px] border-b-[1px] border-b-slate-700 min-w-[720px]">
+  <div class="max-w-full h-full relative mb-4 text-xs md:text-sm lg:text-base">
+  <ul class="grid grid-cols-7 h-full grid-rows-[auto] auto-rows-fr animate-pull bg-slate-700 gap-[1px] border-b-[1px] border-b-slate-700 min-w-[440px]">
   {#each ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'] as day}
-    <li class="px-4 py-2 text-amber-400 text-sm sticky top-0 bg-slate-700 z-10">{ day }</li>
+    <li class="px-4 py-2 text-amber-400 sticky top-0 bg-slate-700 z-10">{ day }</li>
   {/each}
   {#each viewDays as {day, month, inPast}}
     {@const { events } = viewData.find(data => data.day === day && data.month === month) ?? { day: 0, month: 0, events: [] }}
     <li class={'relative overflow-hidden' + (inPast ? ' bg-slate-800' : ' bg-slate-900')}>
       <div class="p-2 flex gap-4">
-        <h2 class="text-amber-400 text-xs md:text-sm">{ day } { ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][month - 1] }</h2>
+        <h2 class="text-amber-400">{ day } { ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][month - 1] }</h2>
       </div>
-      <div class="p-2 flex-col gap-2">
+      <div class="flex p-2 pr-0 lg:pr-2 flex-col gap-2">
         {#each events as { title, where, slug }}
-        <a href={`/events/${slug}`} class="text-sm list-item list-disc list-inside hover:underline">{ title } { where }</a>
+        <a href={`/events/${slug}`} class="p-[1px] rounded-sm hover:underline block bg-slate-700">{ title } { where }</a>
         {/each}
       </div>
     </li>

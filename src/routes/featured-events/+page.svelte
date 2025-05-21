@@ -2,7 +2,7 @@
   import { getEventsView } from "$lib/utils";
   const eventsView = getEventsView();
 </script>
-<ul class="grid gap-4 p-4 animate-pull">
+<ul class="grid gap-4 p-4 pt-2 animate-pull">
 {#each eventsView as {title, hosts, when, slug, where}}
   <li class="relative overflow-hidden rounded-xl bg-slate-800 hover:outline">
     <div class="p-4 text-pretty lg:flex gap-4">
