@@ -264,16 +264,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ]
     },
     {
-      location: 'axe-and-square',
-      host: 'fran',
-      time: '7.30pm',
-      when: 'The third Monday of the month',
-      occurrence: {
-        day: 'monday',
-        week: 'third',
-      },
-    },
-    {
       location: 'black-dog',
       time: '3pm',
       when: 'Usually the first Sunday of the month',
