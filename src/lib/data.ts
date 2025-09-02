@@ -194,12 +194,13 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     {
       host: 'chris-sergent',
       location: 'red-lion-sapcote',
-      when: 'The third Wednesday of the month',
+      when: 'Every three weeks on a Wednesday',
       time: '7.30pm',
-      occurrence: {
-        day: 'wednesday',
-        week: 'third',
-      },
+      manualOccurrences: [
+        '2025-08-20',
+        '2025-09-10',
+        '2025-10-01',
+      ],
     },
     {
       host: 'jack-and-tasha',
@@ -317,10 +318,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       manualOccurrences: [
         '2025-03-21',
         '2025-05-23',
+        '2025-08-22',
       ],
       exceptions: [
         '2025-03-28',
         '2025-05-30',
+        '2025-08-29',
       ],
       links: [
         {
