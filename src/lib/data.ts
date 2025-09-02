@@ -319,11 +319,13 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         '2025-03-21',
         '2025-05-23',
         '2025-08-22',
+        '2025-09-19',
       ],
       exceptions: [
         '2025-03-28',
         '2025-05-30',
         '2025-08-29',
+        '2025-09-26',
       ],
       links: [
         {
