@@ -203,22 +203,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      host: 'jack-and-tasha',
-      location: 'grand-union',
-      when: 'The second and fourth Thursday of the month',
-      time: '7.30pm',
-      occurrences: [
-        {
-          day: 'thursday',
-          week: 'second',
-        },
-        {
-          day: 'thursday',
-          week: 'fourth',
-        },
-      ],
-    },
-    {
       host: 'simon-day',
       location: 'red-cow',
       title: 'Acoustic Night at The Red Cow Market Harborough',
