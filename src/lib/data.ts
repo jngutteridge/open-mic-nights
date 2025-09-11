@@ -320,12 +320,14 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         '2025-05-23',
         '2025-08-22',
         '2025-09-19',
+        '2025-10-24',
       ],
       exceptions: [
         '2025-03-28',
         '2025-05-30',
         '2025-08-29',
         '2025-09-26',
+        '2025-10-31',
       ],
       links: [
         {
