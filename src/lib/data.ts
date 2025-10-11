@@ -165,18 +165,33 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
     },
     {
       host: 'jack-and-tasha',
-      location: 'baton-rouge-queens',
-      when: 'The first and third Thursday of the month',
+      location: 'baton-rouge-hinckley',
+      when: 'Once a month on Thursday',
       time: '8pm',
-      occurrences: [
+      manualOccurrences: [
+        '2025-10-16',
+      ],
+      links: [
         {
-          day: 'thursday',
-          week: 'first',
+          icon: 'facebook',
+          href: 'https://www.facebook.com/batonrougehinckley',
+          description: 'Facebook page',
         },
         {
-          day: 'thursday',
-          week: 'third',
+          icon: 'instagram',
+          href: 'https://www.instagram.com/batonrouge_hinckley/',
+          description: 'Instagram page',
         },
+      ],
+    },
+    {
+      host: 'jack-and-tasha',
+      location: 'baton-rouge-queens',
+      when: 'Twice a month on Thursday',
+      time: '8pm',
+      manualOccurrences: [
+        '2025-10-09',
+        '2025-10-23',
       ],
       links: [
         {
@@ -615,6 +630,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Baton Rouge at Queens',
       address: 'Queen\'s Building, 41 Rutland St, Leicester LE1 1RE',
       location: 'Leicester',
+    },
+    {
+      slug: 'baton-rouge-hinckley',
+      name: 'Baton Rouge',
+      address: '41 Regent St, Hinckley LE10 0BA',
+      location: 'Hinckley',
     },
     {
       slug: 'three-tuns',
