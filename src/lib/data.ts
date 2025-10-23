@@ -56,21 +56,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      host: 'baker-and-crane',
-      location: 'royal-oak-rothley',
-      time: '5pm',
-      when: 'Usually around the third Sunday of the month',
-      manualOccurrences: [
-        '2025-04-27',
-      ],
-    },
-    {
       host: 'liam-and-sean',
       location: 'railway',
       time: '5pm',
       when: 'Usually the last or penultimate Sunday of the month',
       manualOccurrences: [
-        '2025-04-27',
+        '2025-10-26',
       ],
       links: [
         {
@@ -138,32 +129,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       },
     },
     {
-      host: 'liam-and-sean',
-      location: 'queens-arms-leire',
-      when: 'Every six weeks on a Tuesday',
-      time: '8pm',
-    },
-    {
-      host: 'baker-and-crane',
-      location: 'royal-oak-cossington',
-      when: 'Usually the third or last Tuesday of the month',
-      time: '7.30pm',
-      manualOccurrences: [
-        '2025-02-25',
-        '2025-03-25',
-      ],
-    },
-    {
-      host: 'fran',
-      location: 'soar-bridge-inn',
-      when: 'The first Monday of the month',
-      time: '7.30pm',
-      occurrence: {
-        day: 'monday',
-        week: 'first',
-      },
-    },
-    {
       host: 'jack-and-tasha',
       location: 'baton-rouge-hinckley',
       when: 'Once a month on Thursday',
@@ -207,14 +172,13 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      host: 'chris-sergent',
+      host: 'altered-ego',
       location: 'red-lion-sapcote',
-      when: 'Every three weeks on a Wednesday',
-      time: '7.30pm',
+      when: 'Once a month on a Wednesday',
+      time: '7pm',
       manualOccurrences: [
-        '2025-08-20',
-        '2025-09-10',
-        '2025-10-01',
+        '2025-11-19',
+        '2025-12-17',
       ],
     },
     {
@@ -296,16 +260,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ]
     },
     {
-      hosts: ['lucy', 'arron-westby'],
-      location: 'rose-and-crown',
-      when: 'The second Friday of the month',
-      time: '8pm',
-      occurrence: {
-        day: 'friday',
-        week: 'second',
-      },
-    },
-    {
       host: 'altered-ego',
       location: 'sir-robert-peel',
       when: 'The last Friday of the month',
@@ -337,16 +291,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      host: 'jimmy-johnson',
-      location: 'chequers-country-inn',
-      when: 'The last Wednesday of the month',
-      time: '7pm',
-      occurrence: {
-        day: 'wednesday',
-        week: 'last',
-      },
-    },
-    {
       hosts: ['fran', 'lucy'],
       location: 'elephant-and-castle',
       when: 'The last Wednesday of the month',
@@ -362,6 +306,16 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
           icon: 'facebook',
         },
       ],
+    },
+    {
+      host: 'jimmy-johnson',
+      location: 'old-inn-littlethorpe',
+      when: 'The first Thursday of the month',
+      time: '7.30pm',
+      occurrence: {
+        day: 'thursday',
+        week: 'first',
+      },
     },
   ],
   hosts: [
@@ -709,6 +663,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Red Lion',
       address: '8 Church St, Sapcote, Leicester LE9 4FG',
       location: 'Sapcote',
+    },
+    {
+      slug: 'old-inn-littlethorpe',
+      name: 'The Old Inn',
+      address: 'The Square, Littlethorpe, Leicester LE19 2HX',
+      location: 'Littlethorpe',
     },
   ],
 };
