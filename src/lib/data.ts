@@ -135,6 +135,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       time: '8pm',
       manualOccurrences: [
         '2025-10-16',
+        '2025-11-13',
       ],
       links: [
         {
@@ -157,6 +158,8 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       manualOccurrences: [
         '2025-10-09',
         '2025-10-23',
+        '2025-11-06',
+        '2025-11-20',
       ],
       links: [
         {
