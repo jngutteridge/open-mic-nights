@@ -129,52 +129,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       },
     },
     {
-      host: 'jack-and-tasha',
-      location: 'baton-rouge-hinckley',
-      when: 'Once a month on Thursday',
-      time: '8pm',
-      manualOccurrences: [
-        '2025-10-16',
-        '2025-11-13',
-      ],
-      links: [
-        {
-          icon: 'facebook',
-          href: 'https://www.facebook.com/batonrougehinckley',
-          description: 'Facebook page',
-        },
-        {
-          icon: 'instagram',
-          href: 'https://www.instagram.com/batonrouge_hinckley/',
-          description: 'Instagram page',
-        },
-      ],
-    },
-    {
-      host: 'jack-and-tasha',
-      location: 'baton-rouge-queens',
-      when: 'Twice a month on Thursday',
-      time: '8pm',
-      manualOccurrences: [
-        '2025-10-09',
-        '2025-10-23',
-        '2025-11-06',
-        '2025-11-20',
-      ],
-      links: [
-        {
-          icon: 'facebook',
-          href: 'https://www.facebook.com/profile.php?id=61558099981041',
-          description: 'Facebook page',
-        },
-        {
-          icon: 'instagram',
-          href: 'https://www.instagram.com/batonrougeatqueens/',
-          description: 'Instagram page',
-        },
-      ],
-    },
-    {
       host: 'altered-ego',
       location: 'red-lion-sapcote',
       when: 'Once a month on a Wednesday',
@@ -214,23 +168,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      location: 'loaded-dog',
-      time: '7.30pm',
-      when: 'Every Monday',
-      links: [
-        {
-          icon: 'facebook',
-          href: 'https://www.facebook.com/LoadedDog',
-          description: 'Facebook page',
-        },
-        {
-          icon: 'instagram',
-          href: 'https://www.instagram.com/LoadedDogLeics/',
-          description: 'Instagram page'
-        },
-      ]
-    },
-    {
       location: 'black-dog',
       time: '3pm',
       when: 'Usually the first Sunday of the month',
@@ -263,37 +200,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ]
     },
     {
-      host: 'altered-ego',
-      location: 'sir-robert-peel',
-      when: 'The last Friday of the month',
-      time: '7pm',
-      occurrence: {
-        day: 'friday',
-        week: 'last',
-      },
-      manualOccurrences: [
-        '2025-03-21',
-        '2025-05-23',
-        '2025-08-22',
-        '2025-09-19',
-        '2025-10-24',
-      ],
-      exceptions: [
-        '2025-03-28',
-        '2025-05-30',
-        '2025-08-29',
-        '2025-09-26',
-        '2025-10-31',
-      ],
-      links: [
-        {
-          icon: 'facebook',
-          href: 'https://www.facebook.com/events/635225235654174',
-          description: 'Facebook event',
-        }
-      ],
-    },
-    {
       hosts: ['fran', 'lucy'],
       location: 'elephant-and-castle',
       when: 'The last Wednesday of the month',
@@ -319,6 +225,21 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'thursday',
         week: 'first',
       },
+    },
+    {
+      location: 'plough-inn-ratby',
+      when: 'The first Thursday of the month',
+      time: '7.30pm',
+      manualOccurrences: [
+        '2025-12-09',
+      ],
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/ratbyopenmic',
+          icon: 'facebook',
+        }
+      ]
     },
   ],
   hosts: [
@@ -672,6 +593,12 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'The Old Inn',
       address: 'The Square, Littlethorpe, Leicester LE19 2HX',
       location: 'Littlethorpe',
+    },
+    {
+      slug: 'plough-inn-ratby',
+      name: 'Plough Inn',
+      address: 'Burroughs Rd, Ratby, Leicester LE6 0XZ',
+      location: 'Ratby',
     },
   ],
 };
