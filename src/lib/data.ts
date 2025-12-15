@@ -62,6 +62,7 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       when: 'Usually the last or penultimate Sunday of the month',
       manualOccurrences: [
         '2025-10-26',
+        '2025-12-21',
       ],
       links: [
         {
@@ -97,6 +98,9 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'thursday',
         week: 'first',
       },
+      exceptions: [
+        '2026-01-01',
+      ]
     },
     {
       hosts: ['fran', 'lucy'],
@@ -127,6 +131,9 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'monday',
         week: 'fourth',
       },
+      exceptions: [
+        '2025-12-22',
+      ],
     },
     {
       host: 'altered-ego',
@@ -148,6 +155,9 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'thursday',
         week: 'first',
       },
+      exceptions: [
+        '2026-01-01',
+      ],
       links: [
         {
           icon: 'facebook',
@@ -197,7 +207,10 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
           href: 'https://www.facebook.com/groups/1305211636615435',
           description: 'Facebook group',
         }
-      ]
+      ],
+      exceptions: [
+        '2025-12-26',
+      ],
     },
     {
       hosts: ['fran', 'lucy'],
@@ -215,6 +228,9 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
           icon: 'facebook',
         },
       ],
+      exceptions: [
+        '2025-12-31',
+      ],
     },
     {
       host: 'jimmy-johnson',
@@ -225,6 +241,9 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         day: 'thursday',
         week: 'first',
       },
+      exceptions: [
+        '2026-01-01',
+      ],
     },
     {
       location: 'plough-inn-ratby',
