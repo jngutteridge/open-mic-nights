@@ -178,22 +178,6 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       ],
     },
     {
-      location: 'black-dog',
-      time: '3pm',
-      when: 'Usually the first Sunday of the month',
-      occurrence: {
-        day: 'sunday',
-        week: 'first',
-      },
-      links: [
-        {
-          icon: 'facebook',
-          href: 'https://www.facebook.com/events/1172377943752104',
-          description: 'Facebook event',
-        }
-      ]
-    },
-    {
       location: 'james-bistro',
       time: '6pm',
       when: 'The last Friday of the month',
@@ -256,6 +240,40 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           description: 'Facebook page',
           href: 'https://www.facebook.com/ratbyopenmic',
+          icon: 'facebook',
+        }
+      ]
+    },
+    {
+      location: 'the-plough-wigston',
+      host: 'liam-and-sean',
+      when: 'The first Sunday of the month',
+      time: '4pm',
+      manualOccurrences: [
+        '2026-01-04',
+      ],
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/theploughinnwigston',
+          icon: 'facebook',
+        }
+      ]
+    },
+    {
+      location: 'ashby-tavern-hinckley',
+      host: 'tichetasha',
+      when: 'Usually the first Sunday of the month',
+      time: '4pm',
+      manualOccurrences: [
+        '2026-01-04',
+        '2026-02-08',
+        '2026-03-08',
+      ],
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/profile.php?id=61555665904042',
           icon: 'facebook',
         }
       ]
@@ -420,6 +438,22 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
         {
           icon: 'instagram',
           href: 'https://www.instagram.com/jimmyjohnsonmusic/',
+          description: 'Instagram page',
+        },
+      ],
+    },
+    {
+      slug: 'tichetasha',
+      name: 'TicheTasha',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/profile.php?id=61583413996395',
+          description: 'Facebook page',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/tichetasha/',
           description: 'Instagram page',
         },
       ],
@@ -618,6 +652,18 @@ export const openMicData: { events: Event[], hosts: Host[], locations: Location[
       name: 'Plough Inn',
       address: 'Burroughs Rd, Ratby, Leicester LE6 0XZ',
       location: 'Ratby',
+    },
+    {
+      slug: 'the-plough-wigston',
+      name: 'The Plough',
+      address: '46 Bushloe End, Wigston LE18 2BA',
+      location: 'Wigston'
+    },
+    {
+      slug: 'ashby-tavern-hinckley',
+      name: 'Ashby Tavern',
+      address: '62 Ashby Rd, Hinckley LE10 1SL',
+      location: 'Hinckley'
     },
   ],
 };
