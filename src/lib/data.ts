@@ -59,16 +59,13 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       host: 'altered-ego',
       location: 'railway',
       time: '5pm',
-      when: 'Usually the last or penultimate Sunday of the month',
+      when: 'Usually the second Sunday of the month',
       manualOccurrences: [
-        '2025-10-26',
-        '2025-12-21',
-        '2026-01-25',
-        '2026-02-22',
-        '2026-03-29',
-        '2026-04-26',
-        '2026-05-31',
-        '2026-06-28'
+        '2026-08-16',
+        '2026-09-13',
+        '2026-10-11',
+        '2026-11-08',
+        '2026-11-29',
       ]
     },
     {
@@ -183,7 +180,7 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       manualOccurrences: ['2026-01-23']
     },
     {
-      hosts: ['fran', 'lucy'],
+      host: 'altered-ego',
       location: 'elephant-and-castle',
       when: 'The last Wednesday of the month',
       time: '7.30pm',
@@ -191,14 +188,8 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
         day: 'wednesday',
         week: 'last'
       },
-      links: [
-        {
-          description: 'Facebook page',
-          href: 'https://www.facebook.com/profile.php?id=61575105931541',
-          icon: 'facebook'
-        }
-      ],
-      exceptions: ['2025-12-31']
+      manualOccurrences: ['2026-12-16'],
+      exceptions: ['2026-12-31']
     },
     {
       host: 'jimmy-johnson',
