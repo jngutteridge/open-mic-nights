@@ -161,8 +161,8 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       host: 'baker-and-crane',
       location: 'birstall-social-club',
       time: '5pm',
-      when: 'Usually the second Sunday of the month',
-      manualOccurrences: ['2025-01-12', '2025-03-09', '2025-06-29']
+      when: 'Every six weeks on a Sunday',
+      manualOccurrences: ['2026-08-23']
     },
     {
       location: 'james-bistro',
