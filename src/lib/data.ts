@@ -254,7 +254,25 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
           icon: 'facebook'
         }
       ]
-    }
+    },
+    {
+      location: 'the-fountain',
+      host: 'kenny-wilson',
+      when: 'Every Wednesday',
+      time: '6pm',
+      occurrence: {
+        day: 'wednesday',
+        week: 'every',
+      },
+      links: [
+        {
+          description: 'Facebook event',
+          href: 'https://www.facebook.com/events/1618403603628728/',
+          icon: 'facebook',
+        },
+      ],
+      title: 'Acoustic Jam Session at The Fountain'
+    },
   ],
   hosts: [
     {
@@ -434,7 +452,18 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
           description: 'Instagram page'
         }
       ]
-    }
+    },
+    {
+      slug: 'kenny-wilson',
+      name: 'Kenny Wilson',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/kennywilsonmusic',
+          description: 'Facebook page',
+        },
+      ],
+    },
   ],
   locations: [
     {
@@ -641,6 +670,12 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       name: 'Ashby Tavern',
       address: '62 Ashby Rd, Hinckley LE10 1SL',
       location: 'Hinckley'
-    }
+    },
+    {
+      slug: 'the-fountain',
+      name: 'The Fountain',
+      address: '52 Humberstone Gate, Leicester LE1 3PJ',
+      location: 'Leicester',
+    },
   ]
 };
