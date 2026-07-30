@@ -220,7 +220,7 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       host: 'liam-and-sean',
       when: 'The first Sunday of the month',
       time: '4pm',
-      manualOccurrences: ['2026-06-07'],
+      manualOccurrences: ['2026-08-02'],
       links: [
         {
           description: 'Facebook page',
@@ -328,8 +328,13 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
           icon: 'facebook',
           href: 'https://www.facebook.com/liamandseanacousticduo/',
           description: 'Facebook page'
-        }
-      ]
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/liamseanduo/',
+          description: 'Instagram page'
+        },
+      ],
     },
     {
       slug: 'open-mike',
