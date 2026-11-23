@@ -56,19 +56,6 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       ]
     },
     {
-      host: 'altered-ego',
-      location: 'railway',
-      time: '5pm',
-      when: 'Usually the second Sunday of the month',
-      manualOccurrences: [
-        '2026-08-16',
-        '2026-09-13',
-        '2026-10-11',
-        '2026-11-08',
-        '2026-11-29',
-      ]
-    },
-    {
       host: 'open-mike',
       location: 'soundhouse',
       when: 'Every Tuesday',
@@ -118,24 +105,6 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       }
     },
     {
-      host: 'fran',
-      location: 'white-bear',
-      when: 'The fourth Monday of the month',
-      time: '7.30pm',
-      occurrence: {
-        day: 'monday',
-        week: 'fourth'
-      },
-      exceptions: ['2025-12-22']
-    },
-    {
-      host: 'altered-ego',
-      location: 'red-lion-sapcote',
-      when: 'Once a month on a Wednesday',
-      time: '7pm',
-      manualOccurrences: ['2025-11-19', '2025-12-17', '2026-01-21']
-    },
-    {
       host: 'simon-day',
       location: 'red-cow',
       title: 'Acoustic Night at The Red Cow Market Harborough',
@@ -164,11 +133,7 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
     {
       location: 'james-bistro',
       time: '6pm',
-      when: 'The last Friday of the month',
-      occurrence: {
-        day: 'friday',
-        week: 'last'
-      },
+      when: 'Friday 18th December',
       links: [
         {
           icon: 'facebook',
@@ -176,11 +141,10 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
           description: 'Facebook group'
         }
       ],
-      exceptions: ['2025-12-26', '2026-01-30'],
-      manualOccurrences: ['2026-01-23']
+      manualOccurrences: ['2026-12-18']
     },
     {
-      host: 'altered-ego',
+      host: 'tichetasha',
       location: 'elephant-and-castle',
       when: 'The last Wednesday of the month',
       time: '7.30pm',
@@ -204,13 +168,13 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
     },
     {
       location: 'plough-inn-ratby',
-      when: 'The first Thursday of the month',
+      when: 'Wednesday 9th December',
       time: '7.30pm',
-      manualOccurrences: ['2025-12-09'],
+      manualOccurrences: ['2026-12-09'],
       links: [
         {
           description: 'Facebook page',
-          href: 'https://www.facebook.com/ratbyopenmic',
+          href: 'https://www.facebook.com/profile.php?id=61558693976831',
           icon: 'facebook'
         }
       ]
@@ -263,6 +227,160 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
         },
       ],
       title: 'Acoustic Jam Session at The Fountain'
+    },
+    {
+      location: 'bricklayers-sharnford',
+      host: 'liam-and-sean',
+      title: 'Acoustic Open Mic at The Bricklayers',
+      when: 'Wednesday 9th December',
+      time: '8pm',
+      manualOccurrences: ['2026-12-09'],
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/thebricklayerspub',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'holywell-hinckley',
+      when: 'Thursday 26th November',
+      time: '7.30pm',
+      manualOccurrences: ['2026-11-26'],
+      links: [
+        {
+          description: 'Facebook event',
+          href: 'https://www.facebook.com/events/1192786006763391/',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'blue-bell-stoney-stanton',
+      when: 'Sunday 20th December',
+      time: '4pm',
+      manualOccurrences: ['2026-12-20'],
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/TheBlueBell22',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'kings-arms-ravenstone',
+      when: 'The first Thursday of the month',
+      time: '7pm',
+      occurrence: { day: 'thursday', week: 'first' },
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/TheKingsArmsRavenstone',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'bulls-head-cosby',
+      title: "Sid's Christmas Open Mic",
+      when: 'Sunday 20th December',
+      time: '3pm',
+      manualOccurrences: ['2026-12-20'],
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/thebullcosby',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'kneaded-pint-anstey',
+      when: 'Sunday 29th November and Sunday 27th December',
+      time: '4pm',
+      manualOccurrences: ['2026-11-29', '2026-12-27'],
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/thekneadedpint',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'generator-loughborough',
+      when: 'Every Monday',
+      time: '8pm',
+      occurrence: { day: 'monday', week: 'every' },
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/generatorlboro',
+          icon: 'facebook',
+        },
+        {
+          description: 'Instagram page',
+          href: 'https://www.instagram.com/generatorlboro',
+          icon: 'instagram',
+        },
+      ],
+    },
+    {
+      location: 'free-trade-inn-sileby',
+      title: 'Sileby Singaround (acoustic, unplugged)',
+      when: 'The second Wednesday of the month',
+      time: '7.30pm',
+      occurrence: { day: 'wednesday', week: 'second' },
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/thefreetradeinn.sileby',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'mini-monocle-loughborough',
+      when: 'Every Wednesday',
+      time: '7.30pm',
+      occurrence: { day: 'wednesday', week: 'every' },
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/caskbahrocks',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'railway-christmas',
+      title: "Jeanette & Juggy's Christmas Special Open Mic",
+      when: 'Sunday 6th December',
+      time: '4pm',
+      manualOccurrences: ['2026-12-06'],
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/TheRailwayCountesthorpe',
+          icon: 'facebook',
+        },
+      ],
+    },
+    {
+      location: 'black-horse-leicester',
+      title: 'Monday Music Club',
+      when: 'Every Monday',
+      time: '7.30pm',
+      occurrence: { day: 'monday', week: 'every' },
+      links: [
+        {
+          description: 'Facebook page',
+          href: 'https://www.facebook.com/profile.php?id=100046505695694',
+          icon: 'facebook',
+        },
+      ],
     },
   ],
   hosts: [
@@ -671,6 +789,66 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       slug: 'the-fountain',
       name: 'The Fountain',
       address: '52 Humberstone Gate, Leicester LE1 3PJ',
+      location: 'Leicester',
+    },
+    {
+      slug: 'bricklayers-sharnford',
+      name: 'The Bricklayers',
+      address: '23 Leicester Rd, Sharnford, Hinckley LE10 3PP',
+      location: 'Sharnford',
+    },
+    {
+      slug: 'holywell-hinckley',
+      name: 'Holywell',
+      address: '56 London Rd, Hinckley LE10 1HL',
+      location: 'Hinckley',
+    },
+    {
+      slug: 'blue-bell-stoney-stanton',
+      name: 'The Blue Bell',
+      address: '20 Long St, Stoney Stanton, Leicester LE9 4DQ',
+      location: 'Stoney Stanton',
+    },
+    {
+      slug: 'kings-arms-ravenstone',
+      name: 'The Kings Arms',
+      address: '101 Church Ln, Ravenstone, Coalville LE67 2AF',
+      location: 'Ravenstone',
+    },
+    {
+      slug: 'kneaded-pint-anstey',
+      name: 'Kneaded Pint',
+      address: 'Albion St, Anstey, Leicester LE7 7DE',
+      location: 'Anstey',
+    },
+    {
+      slug: 'generator-loughborough',
+      name: 'The Generator',
+      address: '12 Frederick St, Loughborough LE11 3AE',
+      location: 'Loughborough',
+    },
+    {
+      slug: 'free-trade-inn-sileby',
+      name: 'The Free Trade Inn',
+      address: '27 Cossington Rd, Sileby, Loughborough LE12 7RW',
+      location: 'Sileby',
+    },
+    {
+      slug: 'mini-monocle-loughborough',
+      name: 'The Mini Monocle',
+      address: '39b Market St, Loughborough LE11 3ER',
+      location: 'Loughborough',
+    },
+    {
+      slug: 'railway-christmas',
+      name: 'The Railway',
+      address: '128 Station Rd, Countesthorpe, Leicester LE8 5TD',
+      location: 'Countesthorpe',
+    },
+    {
+      slug: 'black-horse-leicester',
+      name: 'The Black Horse',
+      address: 'Foxon St, Leicester LE3 5LT',
       location: 'Leicester',
     },
   ]
