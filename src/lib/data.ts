@@ -74,7 +74,7 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       ]
     },
     {
-      hosts: ['fran', 'lucy'],
+      host: 'kyla-and-fran',
       location: 'dixie-arms',
       when: 'The first Thursday of the month',
       time: '8pm',
@@ -85,7 +85,7 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       exceptions: ['2026-01-01']
     },
     {
-      hosts: ['fran', 'lucy'],
+      host: 'fran',
       location: 'crown-inn',
       when: 'The second Wednesday of the month',
       time: '8pm',
@@ -95,13 +95,23 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       }
     },
     {
-      host: 'fran',
+      host: 'kyla-and-fran',
       location: 'bull-broughton',
       when: 'The second Monday of the month',
       time: '7.30pm',
       occurrence: {
         day: 'monday',
         week: 'second'
+      }
+    },
+    {
+      host: 'kyla-and-fran',
+      location: 'centro-lounge',
+      when: 'The last Thursday of the month',
+      time: '7.30pm',
+      occurrence: {
+        day: 'thursday',
+        week: 'last'
       }
     },
     {
@@ -578,6 +588,23 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
         },
       ],
     },
+    {
+      slug: 'kyla-and-fran',
+      name: 'Kyla and Fran',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/profile.php?id=61594181782458',
+          description: 'Facebook page',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/kylaandfranduo/',
+          description: 'Instagram page'
+        },
+      ],
+
+    },
   ],
   locations: [
     {
@@ -850,6 +877,12 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       name: 'The Black Horse',
       address: 'Foxon St, Leicester LE3 5LT',
       location: 'Leicester',
+    },
+    {
+      slug: 'centro-lounge',
+      name: 'Centro Lounge',
+      address: '2 Old Hospital Ct, Loughborough LE11 1FS',
+      location: 'Loughborough',
     },
   ]
 };
