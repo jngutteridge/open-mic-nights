@@ -392,6 +392,21 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
         },
       ],
     },
+    {
+      location: 'cradock-arms',
+      title: 'Cradocks Jam Club',
+      host: 'blind-guitar-guy',
+      when: 'The second Tuesday of the month',
+      time: '12.30pm',
+      occurrence: { day: 'tuesday', week: 'second' },
+      links: [
+        {
+          description: 'Facebook event',
+          href: 'https://www.facebook.com/events/1127245236885846/',
+          icon: 'facebook',
+        },
+      ],
+    },
   ],
   hosts: [
     {
@@ -603,7 +618,22 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
           description: 'Instagram page'
         },
       ],
-
+    },
+    {
+      slug: 'blind-guitar-guy',
+      name: 'Blind Guitar Guy',
+      links: [
+        {
+          icon: 'facebook',
+          href: 'https://www.facebook.com/BlindGuitarGuy',
+          description: 'Facebook page',
+        },
+        {
+          icon: 'instagram',
+          href: 'https://www.instagram.com/blindguitarguy/',
+          description: 'Instagram page',
+        },
+      ],
     },
   ],
   locations: [
@@ -883,6 +913,12 @@ export const openMicData: { events: Event[]; hosts: Host[]; locations: Location[
       name: 'Centro Lounge',
       address: '2 Old Hospital Ct, Loughborough LE11 1FS',
       location: 'Loughborough',
+    },
+    {
+      slug: 'cradock-arms',
+      name: 'The Cradock Arms',
+      address: '201 Knighton Rd, Knighton, Leicester LE2 3TT',
+      location: 'Leicester',
     },
   ]
 };
